@@ -6,7 +6,7 @@
 #include "ToolBox.h"
 
 #define PWMPER 40.0
-unsigned char acceleration = 1;
+unsigned char acceleration = 20;
 
 void InitPWM(void)
 {

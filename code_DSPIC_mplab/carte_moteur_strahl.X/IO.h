@@ -4,6 +4,9 @@
 //define motors
 #define MOTEUR_DROIT 0
 #define MOTEUR_GAUCHE 1
+#define DROITE 0
+#define GAUCHE 1
+#define JACK _RA0
 
 //Affectation des pins des LEDS
 #define LED_ORANGE _LATC10 

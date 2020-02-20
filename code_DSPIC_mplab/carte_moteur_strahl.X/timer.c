@@ -118,7 +118,7 @@ void InitTimer4(void) {
 void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)
 {
     IFS0bits.T1IF = 0;
-    LED_BLANCHE = !LED_BLANCHE;
+
 
     ADC1StartConversionSequence();
     PWMUpdateSpeed();
@@ -127,7 +127,7 @@ void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)
 //interrupt timer 4
 void __attribute__((interrupt, no_auto_psv)) _T4Interrupt(void) { 
     IFS1bits.T4IF = 0; 
-    LED_ORANGE = !LED_ORANGE;
+
     timestamp++; 
     OperatingSystemLoop();
 } 
