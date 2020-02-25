@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "robotInterface_barthelemy", "robotInterface_barthelemy.csproj", "{57498992-CEBC-46A8-96B6-362A69AA786A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedSerialPort", "externLibs\ExtendedSerialPort\ExtendedSerialPort\ExtendedSerialPort.csproj", "{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57498992-CEBC-46A8-96B6-362A69AA786A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57498992-CEBC-46A8-96B6-362A69AA786A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57498992-CEBC-46A8-96B6-362A69AA786A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57498992-CEBC-46A8-96B6-362A69AA786A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE15A54-D7E1-49CD-8D28-57839E9DD06E}
+	EndGlobalSection
+EndGlobal

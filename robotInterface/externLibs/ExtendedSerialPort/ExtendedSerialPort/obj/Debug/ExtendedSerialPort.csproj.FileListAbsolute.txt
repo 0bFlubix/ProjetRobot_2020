@@ -1,0 +1,41 @@
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\table4\Desktop\TP2_09_10\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\table4\Desktop\TP2_09_10\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\table4\Desktop\TP2_09_10\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\table4\Desktop\TP2_09_10\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\table4\Desktop\TP2_09_10\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\TP-EO-5\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\LattePanda\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\LattePanda\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\LattePanda\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\LattePanda\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\LattePanda\Desktop\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_20122019\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\GEII Robot\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\GEII Robot\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\GEII Robot\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\GEII Robot\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\GEII Robot\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\TP-EO-5\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\TP-EO-5\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\TP-EO-5\Desktop\Projet_Barthelemy_bares\robotInterface_barthelemy\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
