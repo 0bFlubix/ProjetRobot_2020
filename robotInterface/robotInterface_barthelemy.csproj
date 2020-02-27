@@ -42,7 +42,7 @@
   <ItemGroup>
     <Reference Include="ExtendedSerialPort, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>externLibs\ExtendedSerialPort\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll</HintPath>
+      <HintPath>externLibs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AppIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
