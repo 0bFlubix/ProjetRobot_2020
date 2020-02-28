@@ -1,5 +1,6 @@
 ﻿using ExtendedSerialPort;
 using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 using System.Windows;
 using System.Windows.Controls;
@@ -64,24 +65,23 @@ namespace robotInterface_barthelemy
         //displayTimer 100ms tick, displays incomming RX messages
         private void TimerAffichage_Tick(object sender, EventArgs e)
         {
-            if (robot.UART_ReceivedBytes != null) //if new message in buffer
+            while(robot.rcvBytesQueue.Count>0)
             {
-                for(int i = 0; i < robot.UART_ReceivedBytes.Length; i++)
-                {
-                    if(i == 0)
-                        TextBox_Reception.AppendText("{ ");
-                    TextBox_Reception.AppendText("0x" + robot.UART_ReceivedBytes[i].ToString("X2") + " ");
-                    if (i == robot.UART_ReceivedBytes.Length - 1)
-                        TextBox_Reception.AppendText(" }\n");
-                }
-                robot.UART_ReceivedBytes = null;
+                byte b = robot.rcvBytesQueue.Dequeue();
+                TextBox_Reception.Text += "0x" + b.ToString("X2") + " ";
+                if (robot.rcvBytesQueue.Count == 0)
+                    { TextBox_Reception.Text += "\n"; TextBox_Reception.LineDown(); }
             }
         }
 
+        
         //dataReceived Event
         private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         {
-            robot.UART_ReceivedBytes = e.Data;
+            foreach (byte b in e.Data)
+            {
+                robot.rcvBytesQueue.Enqueue(b);
+            }
         }
 
         //OnClick send button
