@@ -5,9 +5,10 @@
 #include "IO.h"
 #include "timer.h"
 #include "PWM.h"
-#include  "ADC.h"
+#include "ADC.h"
 #include "main.h"
 #include "Robot.h"
+#include "UART.h"
 
 //robot params
 /*
@@ -212,6 +213,7 @@ int main (void) {
     InitIO();
     InitPWM();
     InitADC1();
+    InitUART();
 
 
  while(1){
@@ -226,11 +228,11 @@ int main (void) {
             robotState.distanceTelemetre2 = 34 / (((float) distance[2]) * 3.3 / 4096 * 3.2) - 5; 
             robotState.distanceTelemetre3 = 34 / (((float) distance[3]) * 3.3 / 4096 * 3.2) - 5; 
             robotState.distanceTelemetre4 = 34 / (((float) distance[4]) * 3.3 / 4096 * 3.2) - 5; 
-            
-             
         } 
+    SendMessageDirect((unsigned char*) "Bonjour", 7);
+    __delay32(40000000);
  
- }
+    }
   
 }
 

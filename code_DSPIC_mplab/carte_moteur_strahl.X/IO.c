@@ -36,5 +36,9 @@ void InitIO()
     _TRISC11 = 1;
     _TRISG9 = 1;
     _TRISE15 = 1;    
+    //**************config I/O UART
+    
+    _U1RXR = 0b011000; //remappe l'entrée UART1_RX sur RPI24 [datasheet P.169]
+    _RP36R = 0b000001; //U1TX [000001] RP36 tied to UART1 Transmit
 }
 

@@ -68,7 +68,11 @@ namespace robotInterface_barthelemy
             {
                 for(int i = 0; i < robot.UART_ReceivedBytes.Length; i++)
                 {
+                    if(i == 0)
+                        TextBox_Reception.AppendText("{ ");
                     TextBox_Reception.AppendText("0x" + robot.UART_ReceivedBytes[i].ToString("X2") + " ");
+                    if (i == robot.UART_ReceivedBytes.Length - 1)
+                        TextBox_Reception.AppendText(" }\n");
                 }
                 robot.UART_ReceivedBytes = null;
             }

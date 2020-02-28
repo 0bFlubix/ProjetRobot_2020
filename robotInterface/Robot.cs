@@ -8,7 +8,7 @@ namespace robotInterface_barthelemy
 {
     class Robot
     {
-        public string receivedText;
+        public byte[] UART_ReceivedBytes;
         public Queue<byte> byteListReceived = new Queue<byte>();
     }
 }
