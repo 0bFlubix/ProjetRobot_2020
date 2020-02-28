@@ -60,24 +60,24 @@ namespace robotInterface_barthelemy
         #endregion Functions
 
         #region EventsAndTimers
+
         //displayTimer 100ms tick, displays incomming RX messages
         private void TimerAffichage_Tick(object sender, EventArgs e)
         {
-            if (robot.receivedText != null) //if new message in buffer
+            if (robot.UART_ReceivedBytes != null) //if new message in buffer
             {
-                if (!robot.receivedText.Contains("\n"))
-                    robot.receivedText += "\n";
-                TextBox_Reception.AppendText("[RX " + ListBox_AvailablePorts.SelectedItem.ToString() + "]> " + robot.receivedText);
-                TextBox_Reception.LineDown();
-                robot.receivedText = null;
+                for(int i = 0; i < robot.UART_ReceivedBytes.Length; i++)
+                {
+                    TextBox_Reception.AppendText("0x" + robot.UART_ReceivedBytes[i].ToString("X2") + " ");
+                }
+                robot.UART_ReceivedBytes = null;
             }
         }
 
         //dataReceived Event
         private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         {
-            robot.receivedText += System.Text.Encoding.UTF8.GetString(e.Data);
-
+            robot.UART_ReceivedBytes = e.Data;
         }
 
         //OnClick send button
@@ -114,6 +114,7 @@ namespace robotInterface_barthelemy
         {
             TextBox_Reception.Clear();
         }
+
         #endregion EventsAndTimers
 
     }
