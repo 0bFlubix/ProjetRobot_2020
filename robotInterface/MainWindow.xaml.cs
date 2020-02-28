@@ -76,7 +76,8 @@ namespace robotInterface_barthelemy
         //dataReceived Event
         private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         {
-            robot.receivedText = SerialPort1.ReadExisting();
+            robot.receivedText += System.Text.Encoding.UTF8.GetString(e.Data);
+
         }
 
         //OnClick send button
