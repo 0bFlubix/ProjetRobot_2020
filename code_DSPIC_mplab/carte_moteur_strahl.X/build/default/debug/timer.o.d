@@ -3,5 +3,4 @@ timer.c  \
 timer.h  \
 IO.h  \
 main.h  \
-PWM.h  \
-ADC.h 
+PWM.h 

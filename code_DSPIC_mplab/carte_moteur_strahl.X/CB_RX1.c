@@ -1,3 +1,4 @@
+
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -54,25 +55,22 @@ void __attribute__((interrupt, no_auto_psv)) _U1RXInterrupt(void) {
 
     /* get the data */
     while(U1STAbits.URXDA == 1) 
-    { CB_RX1_Add(U1RXREG); }
+      CB_RX1_Add(U1RXREG); 
 }
 
 int CB_RX1_GetRemainingSize(void)
 {
-    int rSizeRecep = CBRX1_BUFFER_SIZE - cbRx1Tail + cbRx1Head;
+    int rSizeRecep;
+    rSizeRecep = CBRX1_BUFFER_SIZE - CB_RX1_GetDataSize();
     return rSizeRecep;
 }
 
 int CB_RX1_GetDataSize(void)
 {
     int rSizeRecep;
-    
-    if(cbRx1Tail < cbRx1Head)
-        rSizeRecep = cbRx1Tail - cbRx1Head;
-    else if(cbRx1Tail > cbRx1Head)
-        rSizeRecep = CBRX1_BUFFER_SIZE - cbRx1Tail + cbRx1Head;
-    else if(cbRx1Tail == cbRx1Head)
-        rSizeRecep = 0;
-    
+    if(cbRx1Tail > cbRx1Head)
+        rSizeRecep = CBRX1_BUFFER_SIZE - cbRx1Head + cbRx1Tail;
+    else
+        rSizeRecep = cbRx1Head - cbRx1Tail;
     return rSizeRecep;
 }

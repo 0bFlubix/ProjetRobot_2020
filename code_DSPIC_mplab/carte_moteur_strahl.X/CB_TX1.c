@@ -15,7 +15,7 @@ void SendMessage(unsigned char* message, int length)
 {
     unsigned char i=0;
 
-    if(CB_TX1_RemainingSize()>length)
+    if(CB_TX1_RemainingSize() > length)
     {
         //On peut écrire le message
         for(i=0;i<length;i++)

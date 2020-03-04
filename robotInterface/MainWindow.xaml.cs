@@ -58,6 +58,12 @@ namespace robotInterface_barthelemy
             TextBox_Emission.Clear();
             TextBox_Emission.Focus();
         }
+
+
+        void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, byte[] magPayload)
+        {
+            
+        }
         #endregion Functions
 
         #region EventsAndTimers
