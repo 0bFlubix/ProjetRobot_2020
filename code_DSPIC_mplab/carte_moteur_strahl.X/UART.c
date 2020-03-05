@@ -1,6 +1,8 @@
 #include <xc.h>
 #include "UART.h"
 #include "ChipConfig.h"
+#include "CB_TX1.h"
+#include "CB_RX1.h"
 
 #define BAUDRATE 115200
 #define BRGVAL ((FCY/BAUDRATE)/4)-1
@@ -16,16 +18,17 @@ void InitUART(void)
     U1STAbits.UTXISEL0 = 0; // Interrupt after one Tx character is transmitted
     U1STAbits.UTXISEL1 = 0;
     IFS0bits.U1TXIF = 0; // clear TX interrupt flag
-    IEC0bits.U1TXIE = 0; // Disable UART Tx interrupt
+    IEC0bits.U1TXIE = 1; // Disable UART Tx interrupt
 
     U1STAbits.URXISEL = 0; // Interrupt after one RX character is received;
     IFS0bits.U1RXIF = 0; // clear RX interrupt flag
-    IEC0bits.U1RXIE = 0; // Disable UART Rx interrupt
+    IEC0bits.U1RXIE = 1; // Disable UART Rx interrupt
 
     U1MODEbits.UARTEN = 1; // Enable UART
     U1STAbits.UTXEN = 1; // Enable UART Tx
 }
-
+    
+//Sends a UART message (freezes the program)
 void SendMessageDirect(unsigned char* message, int length)
 {
     unsigned char i;
@@ -35,3 +38,34 @@ void SendMessageDirect(unsigned char* message, int length)
         U1TXREG = *(message)++;//Transmit one character
     }
 }
+
+unsigned char CalculateChecksum(int msgFunction, int msgPayloadLength, unsigned char * msgPayload)
+{
+    unsigned char checksum = 0;
+    
+    checksum ^= 0xFE ^ (unsigned char)(msgFunction >> 0) ^ (unsigned char)(msgFunction >> 8);
+    
+    int i;
+    for(i = 0; i < msgPayloadLength; i++)
+        checksum ^= msgPayload[i];
+   
+    return checksum;
+}
+
+void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, unsigned char *  msgPayload)
+{
+    unsigned char msgToSend[msgPayloadLength + 6];
+    msgToSend[0] = 0xFE;    //SOF = 0xFE
+    msgToSend[1] = (unsigned char)msgFunction;
+    msgToSend[2] = (unsigned char)(msgFunction >> 8);
+    msgToSend[3] = (unsigned char)msgPayloadLength;
+    msgToSend[4] = (unsigned char)(msgPayloadLength >> 8);
+    
+    int i;
+    for (i = 0; i < msgPayloadLength; i++)  //adds payload to the msgTYoSend Bytelist from byte 5 to msgPayloadLength
+        msgToSend[i + 5] = msgPayload[i];
+
+    msgToSend[5 + msgPayloadLength] = CalculateChecksum(msgFunction, msgPayloadLength, msgPayload); //adds checkSum value to the EOF
+    SendMessage(msgToSend, sizeof(msgToSend));
+}
+

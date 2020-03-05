@@ -7,13 +7,16 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
+using System.Text;
+
+//GITHUB CHECK COMMENT 03/05
 
 namespace robotInterface_barthelemy
 {
     public partial class MainWindow : Window
     {
         //init new instances
-        Robot robot = new Robot();
+        UART UART = new UART();
         ReliableSerialPort SerialPort1 = new ReliableSerialPort(" ", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
         DispatcherTimer timerAffichage;
 
@@ -48,7 +51,7 @@ namespace robotInterface_barthelemy
         }
 
         #region Functions
-        //sends a message to the current COM port (string as output format)
+        //sends a message to the current COM port (string as output format) [DEPRECIATED]
         private void SendMessage()
         {
             TxText = TextBox_Emission.Text.ToString();
@@ -58,12 +61,6 @@ namespace robotInterface_barthelemy
             TextBox_Emission.Clear();
             TextBox_Emission.Focus();
         }
-
-
-        void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, byte[] magPayload)
-        {
-            
-        }
         #endregion Functions
 
         #region EventsAndTimers
@@ -71,12 +68,15 @@ namespace robotInterface_barthelemy
         //displayTimer 100ms tick, displays incomming RX messages
         private void TimerAffichage_Tick(object sender, EventArgs e)
         {
-            while(robot.rcvBytesQueue.Count>0)
+            while(UART.rcvBytesQueue.Count>0)
             {
-                byte b = robot.rcvBytesQueue.Dequeue();
+                
+                byte b = UART.rcvBytesQueue.Dequeue();
                 TextBox_Reception.Text += "0x" + b.ToString("X2") + " ";
-                if (robot.rcvBytesQueue.Count == 0)
+                if (UART.rcvBytesQueue.Count == 0)
                     { TextBox_Reception.Text += "\n"; TextBox_Reception.LineDown(); }
+
+               
             }
         }
 
@@ -86,7 +86,8 @@ namespace robotInterface_barthelemy
         {
             foreach (byte b in e.Data)
             {
-                robot.rcvBytesQueue.Enqueue(b);
+                UART.rcvBytesQueue.Enqueue(b);
+                UART.DecodeMessage(b);
             }
         }
 
@@ -125,7 +126,15 @@ namespace robotInterface_barthelemy
             TextBox_Reception.Clear();
         }
 
+        //OnClick TestButton, sends a text frame "BONJOUR"
+        private void Button_test_Click(object sender, RoutedEventArgs e)
+        {
+            byte[] msgArray = Encoding.ASCII.GetBytes("Bonjour");
+            UART.UartEncodeAndSendMessage(0x0080, msgArray.Length, msgArray, SerialPort1);
+        }
+
         #endregion EventsAndTimers
+
 
     }
 }

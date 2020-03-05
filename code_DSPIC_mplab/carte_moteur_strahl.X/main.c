@@ -13,7 +13,7 @@
 #include "CB_TX1.h"
 #include "CB_RX1.h"
 
-//GITHUB CHECK COMMENT
+//GITHUB CHECK COMMENT 03/05
 
 //robot params
 /*
@@ -223,14 +223,18 @@ int main(void) {
             robotState.distanceTelemetre4 = 34 / (((float) distance[4]) * 3.3 / 4096 * 3.2) - 5;
         }
         
+        /* LOOPBACK TEST
         int i;
         for(i = 0; i < CB_RX1_GetDataSize(); i++)
         {
             unsigned char c = CB_RX1_Get();
             SendMessage(&c, 1);
         }
-        __delay32(1000);
-
+         * */
+        unsigned char text[7] = "Bonjour";
+        UartEncodeAndSendMessage(0x0080, sizeof(text), text);
+        __delay32(40000000);
+        
         
     }
 }
