@@ -70,8 +70,8 @@ namespace robotInterface_barthelemy
         {
             while(UART.rcvBytesQueue.Count>0)
             {
-                
                 byte b = UART.rcvBytesQueue.Dequeue();
+                UART.DecodeMessage(b);
                 TextBox_Reception.Text += "0x" + b.ToString("X2") + " ";
                 if (UART.rcvBytesQueue.Count == 0)
                     { TextBox_Reception.Text += "\n"; TextBox_Reception.LineDown(); }
@@ -87,7 +87,7 @@ namespace robotInterface_barthelemy
             foreach (byte b in e.Data)
             {
                 UART.rcvBytesQueue.Enqueue(b);
-                UART.DecodeMessage(b);
+                //UART.DecodeMessage(b);
             }
         }
 

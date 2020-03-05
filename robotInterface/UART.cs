@@ -56,11 +56,12 @@ namespace robotInterface_barthelemy
         }
 
         StateReception rcvState = StateReception.Waiting;
-        int msgDecodedFunction = 0;
-        int msgDecodedPayloadLength = 0;
+        ushort msgDecodedFunction = 0;
+        ushort msgDecodedPayloadLength = 0;
         byte[] msgDecodedPayload;
-        int msgDecodedPayloadIndex = 0;
+        ushort msgDecodedPayloadIndex = 0;
         byte receivedCheckSum = 0x00;
+        byte calculatedCheckSum = 0x00;
 
         public void DecodeMessage(byte c)
         {
@@ -72,22 +73,22 @@ namespace robotInterface_barthelemy
                     break;
 
                 case StateReception.FunctionMSB:
-                    msgDecodedFunction = (int)(c << 8) & 0xF0;
+                    msgDecodedFunction = (ushort)(c << 8);
                     rcvState = StateReception.FunctionLSB;
                     break;
 
                 case StateReception.FunctionLSB:
-                    msgDecodedFunction += c;
+                    msgDecodedFunction += (ushort)(c << 0);
                     rcvState = StateReception.PayloadLengthMSB;
                     break;
 
                 case StateReception.PayloadLengthMSB:
-                    msgDecodedPayloadLength = (int)(c << 8) & 0xF0;
+                    msgDecodedPayloadLength = (ushort)(c << 8);
                     rcvState = StateReception.PayloadLengthLSB;
                     break;
 
                 case StateReception.PayloadLengthLSB:
-                    msgDecodedPayloadLength += c;
+                    msgDecodedPayloadLength += (ushort)(c << 0);
 
                     if (msgDecodedPayloadLength > 0)
                     {
@@ -112,17 +113,23 @@ namespace robotInterface_barthelemy
 
                 case StateReception.CheckSum:
                     receivedCheckSum = c;
+                    calculatedCheckSum = CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload);
 
-                    if (CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload) == receivedCheckSum)
+                    if (calculatedCheckSum == receivedCheckSum)
                     {
-                        Console.WriteLine("NOICE!");
+                        Console.WriteLine("checksum ok received: " + receivedCheckSum.ToString("X2") +
+                                          " calculated: " + CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload).ToString("X2"));
                     }
-                    else 
+                    else
                     {
-                        Console.WriteLine("ERROR!");
+                        Console.WriteLine("checksum error received: " + receivedCheckSum.ToString("X2") +
+                                                                 " calculated: " + CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload).ToString("X2"));
                     }
 
-                break;
+                    rcvState = StateReception.Waiting;
+
+
+                    break;
 
                 default:
                     rcvState = StateReception.Waiting;

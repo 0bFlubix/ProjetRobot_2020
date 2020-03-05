@@ -231,11 +231,19 @@ int main(void) {
             SendMessage(&c, 1);
         }
          * */
-        unsigned char text[7] = "Bonjour";
-        UartEncodeAndSendMessage(0x0080, sizeof(text), text);
+
+        unsigned char text[7] = "boijour";
+        UartEncodeAndSendMessage(0x0080, 7, text);
         __delay32(40000000);
+        text[1] = "A";
+        UartEncodeAndSendMessage(0x0080, 7, text);
+        __delay32(40000000);
+        text[1] = "Z";
+        UartEncodeAndSendMessage(0x0080, 7, text);
+        __delay32(40000000);
+
         
-        
+       
     }
 }
 

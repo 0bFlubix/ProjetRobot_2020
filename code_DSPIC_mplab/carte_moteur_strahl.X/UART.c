@@ -56,10 +56,10 @@ void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, unsigned ch
 {
     unsigned char msgToSend[msgPayloadLength + 6];
     msgToSend[0] = 0xFE;    //SOF = 0xFE
-    msgToSend[1] = (unsigned char)msgFunction;
-    msgToSend[2] = (unsigned char)(msgFunction >> 8);
-    msgToSend[3] = (unsigned char)msgPayloadLength;
-    msgToSend[4] = (unsigned char)(msgPayloadLength >> 8);
+    msgToSend[1] = (unsigned char)(msgFunction >> 8);
+    msgToSend[2] = (unsigned char)msgFunction;
+    msgToSend[3] = (unsigned char)(msgPayloadLength >> 8);
+    msgToSend[4] = (unsigned char)msgPayloadLength;
     
     int i;
     for (i = 0; i < msgPayloadLength; i++)  //adds payload to the msgTYoSend Bytelist from byte 5 to msgPayloadLength
