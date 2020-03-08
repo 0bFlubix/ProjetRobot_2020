@@ -35,8 +35,12 @@
         <ListBox x:Name="ListBox_AvailablePorts" Grid.Row="1" Background="#FF3E3E42" Foreground="White" SelectionChanged="ListBox_AvailablePorts_SelectionChanged" Margin="0,21.8,0,2.6" VerticalContentAlignment="Stretch"/>
         <TextBox x:Name="TextBox_Emission" Grid.Column="1" Height="23" Margin="5,21.8,10,0" Grid.Row="1" TextWrapping="Wrap" Background="#FF3E3E42" SelectionBrush="#FFF3B50F" SelectionTextBrush="#FFFFB128" Foreground="White" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5.8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TX" VerticalAlignment="Top" Foreground="White" Height="16" Width="35"/>
+<<<<<<< Updated upstream
         <Button x:Name="Button_Clear" Content="Clear" Grid.Column="1" Margin="6,75.8,10,0" Grid.Row="1" Height="20" Click="Button_Clear_Click" VerticalAlignment="Top"/>
         <Button x:Name="Button_test" Content="Test" Grid.Column="1" Margin="6,101,10,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_test_Click"/>
+=======
+        <Button x:Name="Button_Clear" Content="Clear" Grid.Column="1" Margin="5,75.6,10,0" Grid.Row="1" Height="20" Click="Button_Clear_Click" VerticalAlignment="Top"/>
+>>>>>>> Stashed changes
 
     </Grid>
 </Window>

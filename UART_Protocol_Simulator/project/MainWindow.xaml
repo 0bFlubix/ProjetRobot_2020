@@ -1,0 +1,55 @@
+﻿<Window x:Class="UART_Protocol_Simulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UART_Protocol_Simulator"
+        mc:Ignorable="d"
+        Title="UART Robot Protocol Simulator" Height="339.6" Width="491.6" ResizeMode="NoResize" Background="#FF2D2D30" Icon="appIcon.ico">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="310.4"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Width="484" Margin="1,1,-0.2,234.4"/>
+
+        <TextBlock x:Name="textBlock_SOF" HorizontalAlignment="Left" Margin="9,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" FontSize="16" Width="37"><Run Text="SOF"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock_cmd_1" HorizontalAlignment="Left" Margin="58,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" FontSize="16" Width="58"><Run Text="CMD"/><Run Text="1"/></TextBlock>
+        <TextBlock x:Name="textBlock_cmd_0" HorizontalAlignment="Left" Margin="119,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" FontSize="16" Width="58"><Run Text="CMD"/><Run Text="0"/></TextBlock>
+        <TextBlock x:Name="textBlock_payloadSize1" HorizontalAlignment="Left" Margin="183,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="52"><Run Text="SIZE"/><Run Text="1"/></TextBlock>
+        <TextBlock x:Name="textBlock_CheckSum" HorizontalAlignment="Left" Margin="379,1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="CheckSum" FontSize="16" Width="83"/>
+        <TextBlock x:Name="textBlock_payloadSize_Copy" HorizontalAlignment="Left" Margin="298,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" Text="PAYLOAD" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="74"/>
+        <TextBlock x:Name="textBlock_payloadSize1_hex" HorizontalAlignment="Left" Margin="187,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" MouseWheel="textBlock_payloadSize1_hex_MouseWheel" MouseEnter="textBlock_payloadSize1_hex_MouseEnter" MouseLeave="textBlock_payloadSize1_hex_MouseLeave" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_CMD0_hex" HorizontalAlignment="Left" Margin="123,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF0087DF" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_CMD1_hex" HorizontalAlignment="Left" Margin="62,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF1E84FF" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_sof_hex" HorizontalAlignment="Left" Margin="7,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF008CFF" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_CheckSum_hex" HorizontalAlignment="Left" Margin="399,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFFF00F7" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_payloadSize0" HorizontalAlignment="Left" Margin="239,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="52"><Run Text="SIZE"/><Run Text="0"/></TextBlock>
+        <TextBlock x:Name="textBlock_payloadSize0_hex" HorizontalAlignment="Left" Margin="242,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="0x00" RenderTransformOrigin="2.124,0.743" MouseWheel="textBlock_payloadSize0_hex_MouseWheel" MouseEnter="textBlock_payloadSize0_hex_MouseEnter" MouseLeave="textBlock_payloadSize0_hex_MouseLeave" FontSize="16" Width="46"/>
+        <TextBlock x:Name="textBlock_payloadSizeInt" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="107" Text="Payload Size" Margin="1,126,0,0"/>
+        <TextBox x:Name="textBox_payloadSizeInt_int" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" Foreground="White" Background="#FF3E3E42" FontSize="16" FontWeight="Bold" MaxLength="5" MaxLines="1" TextChanged="textBox_payloadSizeInt_int_TextChanged" Margin="108,126,0,0" BorderBrush="{x:Null}"/>
+        <TextBlock x:Name="textBlock_Command" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="107" Text="Command" Margin="1,81,0,0"/>
+        <TextBlock x:Name="textBlock_CMD0_textSelect" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="TXT" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="33" MouseEnter="textBlock_CMD0_textSelect_MouseEnter" MouseLeave="textBlock_CMD0_textSelect_MouseLeave" MouseDown="textBlock_CMD0_textSelect_MouseDown" Margin="120,81,0,0"/>
+        <TextBlock x:Name="textBlock_CMD0_LedSelect" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="LED" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="33" MouseDown="textBlock_CMD0_LedSelect_MouseDown" MouseEnter="textBlock_CMD0_LedSelect_MouseEnter" MouseLeave="textBlock_CMD0_LedSelect_MouseLeave" Margin="184,81,0,0"/>
+        <TextBlock x:Name="textBlock_CMD0_IrSelect" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="IR" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="33" MouseDown="textBlock_CMD0_IrSelect_MouseDown" MouseEnter="textBlock_CMD0_IrSelect_MouseEnter" MouseLeave="textBlock_CMD0_IrSelect_MouseLeave" Margin="243,81,0,0"/>
+        <TextBlock x:Name="textBlock_CMD0_SpeedSelect" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" Text="SPD" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="33" MouseDown="textBlock_CMD0_SpeedSelect_MouseDown" MouseEnter="textBlock_CMD0_SpeedSelect_MouseEnter" MouseLeave="textBlock_CMD0_SpeedSelect_MouseLeave" Margin="287,81,0,0"/>
+        <Rectangle x:Name="TXT_underSelect" Fill="#FF6F6FFF" HorizontalAlignment="Left" Width="30" Margin="120,101,0,204.4"/>
+        <Rectangle x:Name="LED_underSelect" Fill="#FF6F6FFF" HorizontalAlignment="Left" Width="29" Margin="183,101,0,204.4"/>
+        <Rectangle x:Name="IR_underSelect" Fill="#FF6F6FFF" HorizontalAlignment="Left" Width="17" Margin="243,101,0,204.4"/>
+        <Rectangle x:Name="SPD_underSelect" Fill="#FF6F6FFF" HorizontalAlignment="Left" Width="30" Margin="287,101,0,204.4"/>
+        <TextBlock x:Name="textBlock_payloadContent" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="64" Margin="0,176,0,0"><Run Text="Payload"/></TextBlock>
+        <TextBlock x:Name="textBlock_Graphic_None" HorizontalAlignment="Left" Margin="317,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="19" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="30" Text="----"/>
+        <TextBox x:Name="textBox_payloadContent" HorizontalAlignment="Left" Height="82" Margin="69,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Background="#FF3E3E42" BorderBrush="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="White" SelectionTextBrush="{x:Null}" IsReadOnly="True"/>
+        <Button x:Name="button_RandomizePayload" Content="RANDOMIZE" HorizontalAlignment="Left" Margin="69,263,0,0" VerticalAlignment="Top" Width="135" BorderBrush="{x:Null}" Background="#FF3E3E42" Foreground="White" FontSize="16" FontWeight="Bold" Click="button_RandomizePayload_Click"/>
+        <TextBlock x:Name="textBlock_randWarning" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFFFD300" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="108" Margin="209,265,0,0" Visibility="Hidden"><Run Text="!"/><Run Text=" "/><Run Text="~"/><Run Text=" 4s"/></TextBlock>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="112" Margin="64,176,0,0" VerticalAlignment="Top" Width="2"/>
+        <ListBox x:Name="listBox_avPorts" HorizontalAlignment="Left" Height="82" Margin="339,176,0,0" VerticalAlignment="Top" Width="123" RenderTransformOrigin="0.974,0.568" Background="#FF3E3E42" BorderBrush="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="White" SelectionChanged="listBox_avPorts_SelectionChanged"/>
+        <TextBlock x:Name="textBlock_avPorts" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" FontWeight="Bold" TextDecorations="{x:Null}" RenderTransformOrigin="2.124,0.743" FontSize="16" Width="47" Margin="379,151,0,0" Text="Ports"/>
+        <Button x:Name="button_SendFrame" Content="SEND FRAME" HorizontalAlignment="Left" Margin="339,263,0,0" VerticalAlignment="Top" Width="123" BorderBrush="{x:Null}" Background="#FF3E3E42" Foreground="White" FontSize="16" FontWeight="Bold" Click="button_SendFrame_Click"/>
+
+    </Grid>
+</Window>

@@ -79,7 +79,6 @@ namespace robotInterface_barthelemy
                
             }
         }
-
         
         //dataReceived Event
         private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
