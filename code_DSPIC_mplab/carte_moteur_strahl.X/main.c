@@ -26,11 +26,14 @@ int TriggerSlowDownDistance[5] = {35, 40, 40, 40, 35};
  */
 
 int FowardSpeed = 40;
-int RotationSpeed = 10;
+int RotationSpeed = 15;
 int CompWheelRotSpeed = 10;
 int SlowDownSpeed = 20;
-int TriggerRotationDistance[5] = {25, 30, 30, 30, 25};
-int TriggerSlowDownDistance[5] = {35, 40, 40, 40, 35};
+int TriggerRotationDistance[5] = {25, 30, 35, 30, 25};
+int TriggerSlowDownDistance[5] = {35, 40, 45, 40, 35};
+int rotCount = 0;
+
+unsigned char doDelay = 0x00;
 
 unsigned char stateRobot;
 
@@ -44,8 +47,18 @@ void exitCorridor(unsigned char direction) {
     }
 }
 
+void failSafeRotate()
+{
+    PWMSetSpeedConsigne(40, MOTEUR_DROIT);
+    PWMSetSpeedConsigne(-40, MOTEUR_DROIT);
+    __delay32(20000000);
+}
+
 void OperatingSystemLoop(void) {
     if (JACK) {
+        if(doDelay)
+        { __delay32(2 * 40000000); doDelay = 0; }
+        
         switch (stateRobot) {
             case STATE_ATTENTE:
                 timestamp = 0;
@@ -59,6 +72,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_AVANCE:
+                rotCount = 0;
                 PWMSetSpeedConsigne(FowardSpeed, MOTEUR_DROIT);
                 PWMSetSpeedConsigne(FowardSpeed, MOTEUR_GAUCHE);
                 stateRobot = STATE_AVANCE_EN_COURS;
@@ -71,6 +85,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_TOURNE_GAUCHE:
+                rotCount++;
                 PWMSetSpeedConsigne(RotationSpeed, MOTEUR_DROIT);
                 PWMSetSpeedConsigne(-CompWheelRotSpeed, MOTEUR_GAUCHE);
                 stateRobot = STATE_TOURNE_GAUCHE_EN_COURS;
@@ -83,6 +98,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_TOURNE_DROITE:
+                rotCount++;
                 PWMSetSpeedConsigne(-CompWheelRotSpeed, MOTEUR_DROIT);
                 PWMSetSpeedConsigne(RotationSpeed, MOTEUR_GAUCHE);
                 stateRobot = STATE_TOURNE_DROITE_EN_COURS;
@@ -95,6 +111,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_TOURNE_SUR_PLACE_GAUCHE:
+                rotCount = 0;
                 PWMSetSpeedConsigne((timestamp % 2 != 0) ? (RotationSpeed) : (-RotationSpeed), MOTEUR_DROIT);
                 PWMSetSpeedConsigne((timestamp % 2 != 0) ? (-RotationSpeed) : (RotationSpeed), MOTEUR_GAUCHE);
                 stateRobot = STATE_TOURNE_SUR_PLACE_GAUCHE_EN_COURS;
@@ -107,6 +124,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_TOURNE_SUR_PLACE_DROITE:
+                rotCount = 0;
                 PWMSetSpeedConsigne(-RotationSpeed, MOTEUR_DROIT);
                 PWMSetSpeedConsigne(RotationSpeed, MOTEUR_GAUCHE);
                 stateRobot = STATE_TOURNE_SUR_PLACE_DROITE_EN_COURS;
@@ -117,6 +135,7 @@ void OperatingSystemLoop(void) {
                 break;
 
             case STATE_SLOW_DOWN:
+                rotCount = 0;
                 PWMSetSpeedConsigne(SlowDownSpeed, MOTEUR_GAUCHE);
                 PWMSetSpeedConsigne(SlowDownSpeed, MOTEUR_DROIT);
                 SetNextRobotStateInAutomaticMode();
@@ -127,6 +146,7 @@ void OperatingSystemLoop(void) {
                 break;
         }
     } else {
+        doDelay = 1;
         PWMSetSpeedConsigne(0, MOTEUR_DROIT);
         PWMSetSpeedConsigne(0, MOTEUR_GAUCHE);
         timestamp = 0;
@@ -139,7 +159,9 @@ unsigned char nextStateRobot = 0;
 void SetNextRobotStateInAutomaticMode() {
     unsigned char positionObstacle = PAS_D_OBSTACLE;
 
-
+    if(rotCount >= 4)
+    { failSafeRotate(); rotCount = 0; }
+    
     if ((robotState.distanceTelemetre3 < (TriggerRotationDistance[3] - 12)) && (robotState.distanceTelemetre1 < (TriggerRotationDistance[1] - 12))) {
         if (robotState.distanceTelemetre2 < (TriggerRotationDistance[2] - 12))
             positionObstacle = OBSTACLE_EN_FACE;
@@ -230,7 +252,7 @@ int main(void) {
             unsigned char c = CB_RX1_Get();
             SendMessage(&c, 1);
         }
-         * */
+
 
         unsigned char text[7] = "boijour";
         UartEncodeAndSendMessage(0x0080, 7, text);
@@ -242,7 +264,7 @@ int main(void) {
         UartEncodeAndSendMessage(0x0080, 7, text);
         __delay32(40000000);
 
-        
+                 * */
        
     }
 }
