@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageDecoder", "..\Messag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "..\UI\UI.csproj", "{7225A733-C00A-4E19-A14C-44390A3EA9BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortSupervisor", "PortSupervisor\PortSupervisor.csproj", "{FD50E309-7F98-4AFD-8491-07304957A885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortSupervisor", "..\PortSupervisor\PortSupervisor.csproj", "{FD50E309-7F98-4AFD-8491-07304957A885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
