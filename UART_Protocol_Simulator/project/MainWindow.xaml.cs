@@ -49,6 +49,8 @@ namespace UART_Protocol_Simulator
         byte checkSum = 0x00;
         byte[] payload;
 
+        byte errChkSum;
+
         List<byte> payloadContent = new List<byte>();
 
         bool TXT_Selected = false;
@@ -56,6 +58,7 @@ namespace UART_Protocol_Simulator
         bool IR_Selected = false;
         bool SPD_Selected = false;
 
+        byte tlmIndex = 0;
 
         public MainWindow()
         {
@@ -101,8 +104,15 @@ namespace UART_Protocol_Simulator
             {
                 payloadContent.Clear();
 
-                for (int i = 0; i < payloadLength; i++)
-                    payloadContent.Add((byte)pldRand.Next(0, 255));
+                if (tlmIndex > 4)
+                    tlmIndex = 0;
+                else
+                    tlmIndex++;
+
+                    payloadContent.Add(tlmIndex);
+
+                for (int i = 1; i < payloadLength; i++)
+                    payloadContent.Add((byte)pldRand.Next(0x41, 0x7A));
 
                 payload = new byte[payloadLength];
                 payloadContent.CopyTo(payload);
@@ -111,6 +121,7 @@ namespace UART_Protocol_Simulator
 
                 UI_updatePayloadContent();
             }
+
         }
 
         //updates message related values
@@ -156,7 +167,7 @@ namespace UART_Protocol_Simulator
                 IR_underSelect.Visibility = Visibility.Visible;
                 CMD0 = 0x30;
                 PSIZE1 = 0;
-                PSIZE0 = 3; //IR payload : Fixed 3 bytes length
+                PSIZE0 = 5; //IR payload : Fixed 5 bytes length
             }
             else
                 IR_underSelect.Visibility = Visibility.Hidden;
@@ -249,6 +260,11 @@ namespace UART_Protocol_Simulator
             }
             else
                 textBlock_randWarning.Visibility = Visibility.Hidden;
+
+            if (errChkSum == checkSum)
+                textBlock_CheckSum_hex.Foreground = Brushes.Red;
+            else
+                textBlock_CheckSum_hex.Foreground = Brushes.Magenta;
         }
 
         #endregion functions
@@ -354,7 +370,7 @@ namespace UART_Protocol_Simulator
         private void button_SendFrame_Click(object sender, RoutedEventArgs e)
         {
             if(serialPort.PortName.Contains("COM"))
-                uartFuncs.UartEncodeAndSendMessage((int)CMD0, payloadLength, payload, serialPort);
+                uartFuncs.UartEncodeAndSendMessage((int)CMD0, payloadLength, payload,checkSum, serialPort);
         }
         #endregion configs
 
@@ -431,9 +447,16 @@ namespace UART_Protocol_Simulator
             textBlock_CMD0_SpeedSelect.Foreground = Brushes.White;
         }
 
-
+        private void button_InstertError_Click(object sender, RoutedEventArgs e)
+        {
+            errChkSum = (byte)pldRand.Next(0, 255); ;
+            while(errChkSum == checkSum)
+                errChkSum = (byte)pldRand.Next(0, 255);
+            checkSum = errChkSum;
+        }
 
         #endregion Selection
+
 
     }
 }

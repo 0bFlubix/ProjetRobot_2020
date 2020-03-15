@@ -1,0 +1,50 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF292929">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="383*"/>
+            <ColumnDefinition Width="406*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="383" Margin="0,105,0,0" Grid.ColumnSpan="2"/>
+
+        <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="383" Margin="0,76,0,0" Grid.ColumnSpan="2"/>
+
+        <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="383" Margin="0,49,0,0" Grid.ColumnSpan="2"/>
+
+        <Rectangle Fill="#FF3E3E42" HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="383" Grid.ColumnSpan="2" Margin="0,20,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="telem0" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Margin="10,20,0,0" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Margin="10,34,0,0" Grid.ColumnSpan="2"><Run Text="telem"/><Run Text="1"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Margin="10,48,0,0" Grid.ColumnSpan="2"><Run Text="telem"/><Run Text="2"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"><Run Text="telem"/><Run Text="3"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"><Run Text="telem"/><Run Text="4"/></TextBlock>
+        <TextBlock x:Name="UI_telem0_value" HorizontalAlignment="Left" Margin="61,20,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_telem1_value" HorizontalAlignment="Left" Margin="61,34,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_telem2_value" HorizontalAlignment="Left" Margin="61,49,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_telem3_value" HorizontalAlignment="Left" Margin="61,63,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_telem4_value" HorizontalAlignment="Left" Margin="61,77,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" FontSize="16" Grid.ColumnSpan="2"><Run Text="Robot"/><Run Text=" Status"/></TextBlock>
+
+        <TextBox x:Name="TextBox_ReceptionLog" TextWrapping="Wrap" Foreground="White" Background="Black" Grid.ColumnSpan="3" Grid.Row="1" Margin="0,0,0.8,0" AcceptsReturn="True" IsReadOnly="True" />
+        <TextBlock HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"><Run Text="spd "/><Run Text="D"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"><Run Text="spd "/><Run Text="G"/></TextBlock>
+        <TextBlock x:Name="UI_SpeedDr_value" HorizontalAlignment="Left" Margin="61,90,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_SpeedGa_value" HorizontalAlignment="Left" Margin="61,104,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_DirectionDr" HorizontalAlignment="Left" Margin="101,90,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="UI_DirectionGa" HorizontalAlignment="Left" Margin="101,104,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Foreground="White" FontFamily="3ds Light" RenderTransformOrigin="2.901,3.194" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.exe
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.deps.json
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.runtimeconfig.json
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.runtimeconfig.dev.json
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface\bin\Debug\netcoreapp3.1\Interface.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface\obj\Debug\netcoreapp3.1\Interface.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface\obj\Debug\netcoreapp3.1\Interface.AssemblyInfoInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface\obj\Debug\netcoreapp3.1\Interface.AssemblyInfo.cs
+D:\code\IUT\S2\ProjetRobot_2020\Interface\obj\Debug\netcoreapp3.1\Interface.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface\obj\Debug\netcoreapp3.1\Interface.pdb

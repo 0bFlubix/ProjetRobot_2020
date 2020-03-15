@@ -23,20 +23,20 @@ namespace UART_Protocol_Simulator
         }
 
         //sends encoded UART frames
-        public void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, byte[] msgPayload, SerialPort port)
+        public void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, byte[] msgPayload, byte checkSum, SerialPort port)
         {
             byte[] msgToSend = new byte[msgPayloadLength + 6];
 
             msgToSend[0] = 0xFE;    //SOF = 0xFE
-            msgToSend[1] = (byte)msgFunction;
-            msgToSend[2] = (byte)(msgFunction >> 8);
-            msgToSend[3] = (byte)msgPayloadLength;
-            msgToSend[4] = (byte)(msgPayloadLength >> 8);
+            msgToSend[1] = (byte)(msgFunction >> 8);
+            msgToSend[2] = (byte)msgFunction;
+            msgToSend[3] = (byte)(msgPayloadLength >> 8);
+            msgToSend[4] = (byte)msgPayloadLength;
 
             for (int i = 0; i < msgPayloadLength; i++)  //adds payload to the msgTYoSend Bytelist from byte 5 to msgPayloadLength
                 msgToSend[i + 5] = msgPayload[i];
 
-            msgToSend[5 + msgPayloadLength] = CalculateChecksum(msgFunction, msgPayloadLength, msgPayload); //adds checkSum value to the EOF
+            msgToSend[5 + msgPayloadLength] = checkSum; //adds checkSum value to the EOF
             port.Write(msgToSend, 0, msgToSend.Length);
         }
     }

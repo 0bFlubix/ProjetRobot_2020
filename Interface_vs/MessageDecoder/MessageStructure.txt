@@ -1,0 +1,17 @@
+﻿Incomming messages structure:
+
+IrMessages:
+	Byte2			Byte1				Byte0
+	TelemN		MSByte(distance)	LSByte(distance)
+
+	TelemN: 0x00 -> telem0
+			0x01 -> telem1
+			0x02 -> telem2
+			0x...-> telem...
+
+SpeedMessages:
+		Byte2			Byte1
+	Speed Gauche     Speed Droit
+   0b1xxxxxxx
+   MSB=1, +V			+/-128
+   MSB=0, -V
