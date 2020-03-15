@@ -103,6 +103,10 @@
       <Project>{21ac599e-e3d5-4181-aa0f-7c2e00cca016}</Project>
       <Name>ExtendedSerialPort</Name>
     </ProjectReference>
+    <ProjectReference Include="..\main_Interface\PortSupervisor\PortSupervisor.csproj">
+      <Project>{fd50e309-7f98-4afd-8491-07304957a885}</Project>
+      <Name>PortSupervisor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MessageDecoder\MessageDecoder.csproj">
       <Project>{a30a8a20-11db-46f7-ba8d-6162c083d06c}</Project>
       <Name>MessageDecoder</Name>

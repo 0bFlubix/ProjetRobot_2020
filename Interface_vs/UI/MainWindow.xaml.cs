@@ -18,6 +18,7 @@ using ExtendedSerialPort;
 using MessageDecoder;
 using MessageProcessor;
 using Robot;
+using PortSupervisor;
 
 namespace UI
 {
@@ -32,8 +33,6 @@ namespace UI
         public class UIComponentvalues
         {
             public Queue<string> serialInputStream_TextMessages = new Queue<string>();
-            public Queue<ushort> serialInputStream_IrMessages = new Queue<ushort>();
-            public Queue<ushort> serialInputStream_SpeedMessages = new Queue<ushort>();
         }
 
         #endregion UIComponentValues    

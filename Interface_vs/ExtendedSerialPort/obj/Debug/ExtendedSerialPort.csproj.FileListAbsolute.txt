@@ -28,3 +28,12 @@ D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.
 D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
 D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb

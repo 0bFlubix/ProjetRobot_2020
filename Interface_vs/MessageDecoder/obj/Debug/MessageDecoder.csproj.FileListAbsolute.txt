@@ -8,3 +8,13 @@ D:\code\IUT\S2\ProjetRobot_2020\MessageDecoder\bin\Debug\Robot.pdb
 D:\code\IUT\S2\ProjetRobot_2020\MessageDecoder\obj\Debug\MessageDecoder.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\MessageDecoder\obj\Debug\MessageDecoder.dll
 D:\code\IUT\S2\ProjetRobot_2020\MessageDecoder\obj\Debug\MessageDecoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\MessageDecoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\MessageDecoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.pdb

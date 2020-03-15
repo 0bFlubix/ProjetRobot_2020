@@ -4,13 +4,13 @@ using Robot;
 
 namespace EventArgsLibrary
 {
-    //DataReceivedEvent
+    //ExtendedSerialPort: DataReceivedEvent
     public class DataReceivedArgs : EventArgs
     {
         public byte[] Data { get; set; }
     }
 
-    //DataDecodedEvent
+    //MessageDecoder: DataDecodedEvent
     public class DataDecodedArgs : EventArgs
     {
         public ushort DecodedFunction { get; set; }
@@ -20,13 +20,13 @@ namespace EventArgsLibrary
         public bool CheckSumErrorOccured { get; set; }
     }
 
-    //Processed data is text event
+    //MessageProcessor: Processed data is text event
     public class TextDataProcessedArgs : EventArgs
     {
         public string ProcessedText { get; set; }
     }
 
-    //Processed data is speed event
+    //MessageProcessor: Processed data is speed event
     public class SpeedDataProcessedArgs : EventArgs
     {
         public byte SpeedGauche { get; set; }
@@ -35,12 +35,18 @@ namespace EventArgsLibrary
         public robot.MotorWays WayDroit { get; set; }
     }
 
-    //Processed data is InfaredDistance event
+    //MessageProcessor: Processed data is InfaredDistance event
     public class IrDataProcessedArgs : EventArgs
     {
         public byte[] Distance { get; set; }
     }
 
-    //processed data ErrorOccured
+    //MessageProcessor: processed data ErrorOccured event
     public class CheckSumErrorOccuredArgs : EventArgs {}
+
+    //PortSupervisor: available ports changed event
+    public class AvailablePortChangedArgs : EventArgs
+    {
+        public string[] AvailableSerialPorts { get; set; }
+    }
 }
