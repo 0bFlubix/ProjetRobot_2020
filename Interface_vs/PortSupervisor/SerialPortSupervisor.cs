@@ -10,6 +10,6 @@ namespace PortSupervisor
 
     public class SerialPortSupervisor
     {
-
+       
     }
 }

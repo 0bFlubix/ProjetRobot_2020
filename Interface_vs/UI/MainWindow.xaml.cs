@@ -65,7 +65,7 @@ namespace UI
 
             //block logic
             UI_Updater.Tick += UpdateUI;
-
+           
             SerialInputStream.DataReceived += FrameDecoder.DecodeMessage;
             FrameDecoder.OnDataDecodedEvent += FrameProcessor.ProcessMessage;
             FrameProcessor.OnTextMessageProcessedEvent += FrameProcessor_OnTextMessageProcessedEvent;
