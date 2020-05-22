@@ -1,0 +1,11 @@
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\main_Interface\HerkulexCom\bin\Debug\HerkulexCom.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\main_Interface\HerkulexCom\bin\Debug\HerkulexCom.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\main_Interface\HerkulexCom\obj\Debug\HerkulexController.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\main_Interface\HerkulexCom\obj\Debug\HerkulexCom.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\main_Interface\HerkulexCom\obj\Debug\HerkulexCom.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\bin\Debug\HerkulexCom.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\bin\Debug\HerkulexCom.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\obj\Debug\HerkulexController.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\obj\Debug\HerkulexController.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\obj\Debug\HerkulexCom.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexCom\obj\Debug\HerkulexCom.pdb

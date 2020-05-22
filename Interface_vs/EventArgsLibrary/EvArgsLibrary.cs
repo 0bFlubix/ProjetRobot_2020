@@ -49,4 +49,6 @@ namespace EventArgsLibrary
     {
         public string[] AvailableSerialPorts { get; set; }
     }
+
+
 }

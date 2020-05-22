@@ -19,6 +19,7 @@ using MessageDecoder;
 using MessageProcessor;
 using Robot;
 using PortSupervisor;
+using HerkulexController;
 
 namespace UI
 {
@@ -46,6 +47,10 @@ namespace UI
         DispatcherTimer UI_Updater;
         robot RobotModel;
 
+        //test
+        HerkulexController.HerkulexController ServoController = new HerkulexController.HerkulexController();
+        //test
+
         #endregion moduleInst
 
 
@@ -56,7 +61,7 @@ namespace UI
         {
             InitializeComponent();
             
-            SerialInputStream = new ReliableSerialPort("COM1", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+            SerialInputStream = new ReliableSerialPort("COM6", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
             FrameDecoder = new msgDecoder();
             FrameProcessor = new msgProcessor();
             UI_Updater = new DispatcherTimer();
@@ -74,6 +79,13 @@ namespace UI
             FrameProcessor.OnSpeedMessageProcessedEvent += FrameProcessor_OnSpeedMessageProcessedEvent;
 
             SerialInputStream.Open();
+
+            //====================================TEST ZONE========================================================
+            ServoController.EEP_ReadParam(SerialInputStream, 0xAA, 0x11); //test
+            byte[] data = { 0xFF, 0xFF };
+            ServoController.EEP_WriteParam(SerialInputStream, 0xAA, 0x11, data);
+            //=====================================================================================================
+
             UI_Updater.Start();
         }
 
