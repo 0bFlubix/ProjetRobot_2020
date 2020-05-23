@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerkulexController", "..\..\Interface_vs\HerkulexCom\HerkulexController.csproj", "{ADA2C3AB-18D0-4391-8066-272AB39102AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "..\GUI\GUI.csproj", "{9B105E70-6DCE-49E1-BE7D-A20FFA1CC75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerkulexReceptManager", "..\..\Interface_vs\HerkulexReceptManager\HerkulexReceptManager.csproj", "{BF6C02FD-E547-4BE0-94B5-8F43CD4244B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventArgsLibrary", "..\..\Interface_vs\EventArgsLibrary\EventArgsLibrary.csproj", "{50D84D2F-4461-4BB3-B302-AA430CF75C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedSerialPort", "..\..\Interface_vs\ExtendedSerialPort\ExtendedSerialPort.csproj", "{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA2C3AB-18D0-4391-8066-272AB39102AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA2C3AB-18D0-4391-8066-272AB39102AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA2C3AB-18D0-4391-8066-272AB39102AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA2C3AB-18D0-4391-8066-272AB39102AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B105E70-6DCE-49E1-BE7D-A20FFA1CC75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B105E70-6DCE-49E1-BE7D-A20FFA1CC75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B105E70-6DCE-49E1-BE7D-A20FFA1CC75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B105E70-6DCE-49E1-BE7D-A20FFA1CC75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6C02FD-E547-4BE0-94B5-8F43CD4244B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6C02FD-E547-4BE0-94B5-8F43CD4244B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6C02FD-E547-4BE0-94B5-8F43CD4244B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6C02FD-E547-4BE0-94B5-8F43CD4244B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D84D2F-4461-4BB3-B302-AA430CF75C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D84D2F-4461-4BB3-B302-AA430CF75C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D84D2F-4461-4BB3-B302-AA430CF75C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D84D2F-4461-4BB3-B302-AA430CF75C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AC599E-E3D5-4181-AA0F-7C2E00CCA016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC737676-527A-44A7-AFA9-76A9C50FCC7E}
+	EndGlobalSection
+EndGlobal

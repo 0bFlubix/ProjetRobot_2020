@@ -20,6 +20,7 @@ using MessageProcessor;
 using Robot;
 using PortSupervisor;
 using HerkulexController;
+using HerkulexReceptManager;
 
 namespace UI
 {
@@ -49,6 +50,7 @@ namespace UI
 
         //test
         HerkulexController.HerkulexController ServoController = new HerkulexController.HerkulexController();
+        herkulexRecept ControllerReceptionSide = new herkulexRecept();
         //test
 
         #endregion moduleInst
@@ -71,23 +73,34 @@ namespace UI
             //block logic
             UI_Updater.Tick += UpdateUI;
            
+            /*
             SerialInputStream.DataReceived += FrameDecoder.DecodeMessage;
             FrameDecoder.OnDataDecodedEvent += FrameProcessor.ProcessMessage;
             FrameProcessor.OnTextMessageProcessedEvent += FrameProcessor_OnTextMessageProcessedEvent;
             FrameProcessor.OnCheckSumErrorOccuredEvent += FrameProcessor_OnCheckSumErrorOccuredEvent;
             FrameProcessor.OnIrMessageProcessedEvent += FrameProcessor_OnIrMessageProcessedEvent;
             FrameProcessor.OnSpeedMessageProcessedEvent += FrameProcessor_OnSpeedMessageProcessedEvent;
-
+            */
             SerialInputStream.Open();
 
             //====================================TEST ZONE========================================================
             ServoController.EEP_ReadParam(SerialInputStream, 0xAA, 0x11); //test
             byte[] data = { 0xFF, 0xFF };
             ServoController.EEP_WriteParam(SerialInputStream, 0xAA, 0x11, data);
+
+            SerialInputStream.DataReceived += ControllerReceptionSide.HerkulexDecodeIncommingPacket;
+            ControllerReceptionSide.OnHerkulexIncommingMessageDecodedEvent += ControllerReceptionSide_OnHerkulexIncommingMessageDecodedEvent;
             //=====================================================================================================
 
             UI_Updater.Start();
         }
+
+        //============================================================TEST ZONE 2=======================
+        private void ControllerReceptionSide_OnHerkulexIncommingMessageDecodedEvent(object sender, HerkulexIncommingPacketDecodedArgs e)
+        {
+            ComponentsValues.serialInputStream_TextMessages.Enqueue(e.PacketData.ToString());
+        }
+        //===============================================================================================
 
         private void UpdateUI(object sender, EventArgs e) //100ms update rate
         {

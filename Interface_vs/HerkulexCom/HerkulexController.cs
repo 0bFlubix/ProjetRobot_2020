@@ -204,56 +204,5 @@ namespace HerkulexController
             return 0x01; //if the address does not belongs to the two bytes length set, return 1, exit func
         }
 
-        /*
-public enum RegAddrMemlen
-{
-    ID_Len = (byte)(1),                                //Byte length: 1
-    ACK_Policy_Len = (byte)(1),                        //Byte length: 1
-    Alarm_LED_Policy_Len = (byte)(1),                  //Byte length: 1
-    Torque_policy_Len = (byte)(1),                     //Byte length: 1
-    Max_Temperature_Len = (byte)(1),                   //Byte length: 1
-    Min_Voltage_Len = (byte)(1),                       //Byte length: 1
-    Max_Voltage_Len = (byte)(1),                       //Byte length: 1
-    Acceleration_Ratio_Len = (byte)(1),                //Byte length: 1
-    Max_Acceleration_Len = (byte)(1),                  //Byte length: 1
-    Dead_Zone_Len = (byte)(1),                         //Byte length: 1
-    Saturator_Offset_Len = (byte)(1),                  //Byte length: 1
-    Saturator_Slope_Len = (byte)(2),                   //Byte length: 2
-    PWM_Offset_Len = (byte)(1),                        //Byte length: 1
-    Min_PWM_Len = (byte)(1),                           //Byte length: 1
-    Max_PWM_Len = (byte)(2),                           //Byte length: 2
-    Overload_PWM_Threshold_Len = (byte)(2),            //Byte length: 2
-    Min_Position_Len = (byte)(2),                      //Byte length: 2
-    Max_Position_Len = (byte)(2),                      //Byte length: 2
-    Position_Kp_Len = (byte)(2),                       //Byte length: 2
-    Position_Kd_Len = (byte)(2),                       //Byte length: 2
-    Position_Ki_Len = (byte)(2),                       //Byte length: 2
-    Pos_FreeFoward_1st_Gain_Len = (byte)(2),           //Byte length: 2
-    Pos_FreeFoward_2nd_Gain_Len = (byte)(2),           //Byte length: 2
-    LED_Blink_Period_Len = (byte)(1),                  //Byte length: 1
-    ADC_Fault_Detect_Period_Len = (byte)(1),           //Byte length: 1
-    Packet_Garbage_Detection_Period_Len = (byte)(1),   //Byte length: 1
-    Stop_Detection_Period_Len = (byte)(1),             //Byte length: 1
-    Overload_Detection_Period_Len = (byte)(1),         //Byte length: 1
-    Stop_Threshold_Len = (byte)(1),                    //Byte length: 1
-    Inposition_Margin_Len = (byte)(1),                 //Byte length: 1
-    Calibration_Difference_Len = (byte)(1),            //Byte length: 1
-    Status_Error_Len = (byte)(1),                      //Byte length: 1
-    Status_Detail_Len = (byte)(1),                     //Byte length: 1
-    Torque_Control_Len = (byte)(1),                    //Byte length: 1
-    LED_Control_Len = (byte)(1),                       //Byte length: 1
-    Voltage_Len = (byte)(2),                           //Byte length: 2
-    Temperature_Len = (byte)(2),                       //Byte length: 2
-    Current_Control_Mode_Len = (byte)(2),              //Byte length: 2
-    Tick_Len = (byte)(2),                              //Byte length: 2
-    Calibrated_Position_Len = (byte)(2),               //Byte length: 2
-    Absolute_Position_Len = (byte)(2),                 //Byte length: 2
-    Differential_Position_Len = (byte)(2),             //Byte length: 2
-    PWM_Len = (byte)(2),                               //Byte length: 2
-    Absolute_Goal_Position_Len = (byte)(2),            //Byte length: 2
-    Absolute_Desired_Traject_Pos_Len = (byte)(2),      //Byte length: 2
-    Desired_Velocity_Len = (byte)(1)                   //Byte length: 1
-}     //all of the memory lengths at X address
-*/ //could be handy...
     }
 }

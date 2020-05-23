@@ -50,5 +50,16 @@ namespace EventArgsLibrary
         public string[] AvailableSerialPorts { get; set; }
     }
 
+    //HerkulexReceptManager: packetFromServo decoded event
+    public class HerkulexIncommingPacketDecodedArgs : EventArgs
+    {
+        public byte PacketSize { get; set; }
+        public byte PID { get; set; }
+        public byte CMD { get; set; }
+        public byte CheckSum1 { get; set; }
+        public byte CheckSum2 { get; set; }
+        public byte[] PacketData { get; set; }
+    }
+
 
 }

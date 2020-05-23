@@ -1,0 +1,10 @@
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\bin\Debug\herkulexControllerStandalone.exe.config
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\bin\Debug\herkulexControllerStandalone.exe
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\bin\Debug\herkulexControllerStandalone.pdb
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\obj\Debug\herkulexControllerStandalone.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\obj\Debug\herkulexControllerStandalone.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\obj\Debug\herkulexControllerStandalone.exe
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\obj\Debug\herkulexControllerStandalone.pdb
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\bin\Debug\HerkulexController.dll
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\bin\Debug\HerkulexController.pdb
+D:\code\IUT\S2\ProjetRobot_2020\docs\herkulexControllerStandalone\obj\Debug\herkulexControllerStandalone.csproj.CopyComplete

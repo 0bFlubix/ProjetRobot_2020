@@ -1,9 +1,0 @@
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\bin\Debug\netstandard2.0\HerkulexReceptManager.deps.json
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\bin\Debug\netstandard2.0\HerkulexReceptManager.dll
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\bin\Debug\netstandard2.0\HerkulexReceptManager.pdb
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.csprojAssemblyReference.cache
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.csproj.CoreCompileInputs.cache
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.AssemblyInfoInputs.cache
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.AssemblyInfo.cs
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.dll
-D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\HerkulexReceptManager\obj\Debug\netstandard2.0\HerkulexReceptManager.pdb
