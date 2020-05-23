@@ -24,14 +24,12 @@ namespace GUI
 
         private void ReceptionController_OnHerkulexIncommingMessageDecodedEvent(object sender, EventArgsLibrary.HerkulexIncommingPacketDecodedArgs e)
         {
-            /*
+
             foreach(byte b in e.PacketData)
             {
                 Console.WriteLine(b.ToString());
             }
-            */
-            Console.WriteLine(e.CheckSum1);
-            Console.WriteLine("---separator---");
+            Console.WriteLine("--");
         }
     }
 }

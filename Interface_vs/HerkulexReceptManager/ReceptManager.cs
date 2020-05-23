@@ -12,11 +12,11 @@ namespace HerkulexReceptManager
 
         receptionStates rcvState = receptionStates.Waiting;
 
-        public byte packetSize;
-        public byte pID;
-        public byte cmd;
-        public byte checkSum1;
-        public byte checkSum2;
+        public byte packetSize = 0;
+        public byte pID = 0;
+        public byte cmd = 0;
+        public byte checkSum1 = 0;
+        public byte checkSum2 = 0;
         public byte[] packetData;
 
         public byte packetDataByteIndex = 0;
@@ -25,7 +25,6 @@ namespace HerkulexReceptManager
         public enum receptionStates
         {
             Waiting,
-            sof1,
             sof2,
             packetSize,
             pID,
@@ -36,7 +35,7 @@ namespace HerkulexReceptManager
         }
 
         //DataReceived input event, decoding the packet with a state machine for each received bytes
-        public void HerkulexDecodeIncommingPacket(object sender, DataReceivedArgs e)
+        public void HerkulexDecodeIncommingPacket(object sender , DataReceivedArgs e)
         {
             foreach(byte b in e.Data)
             {
@@ -79,20 +78,23 @@ namespace HerkulexReceptManager
                         checkSum2 = b;
                         rcvState = receptionStates.data;
                         break;
-
+                    
                     case receptionStates.data:
-                        if(packetDataByteIndex < packetSize)
+                        if(packetDataByteIndex < packetData.Length)
                         {
                             packetData[packetDataByteIndex] = b;
                             packetDataByteIndex++;
                         }
-
-                        packetDataByteIndex = 0;
-                        OnDataDecoded(packetSize, pID, cmd, checkSum1, checkSum2, packetData); //fire the decoded data event
-                        rcvState = receptionStates.Waiting; //back to waiting
+                        else
+                        {
+                            packetDataByteIndex = 0;
+                            OnDataDecoded(packetSize, pID, cmd, checkSum1, checkSum2, packetData); //fire the decoded data event
+                            rcvState = receptionStates.Waiting; //back to waiting
+                        }
                         break;
                 }
             }
+
         }
 
         //declare new output event: HerkulexIncommingPacketDecodedArgs
