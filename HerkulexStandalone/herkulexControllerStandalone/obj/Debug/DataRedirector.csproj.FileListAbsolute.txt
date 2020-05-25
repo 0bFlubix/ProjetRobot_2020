@@ -1,0 +1,1 @@
+D:\code\IUT\S2\ProjetRobot_2020\HerkulexStandalone\herkulexControllerStandalone\obj\Debug\DataRedirector.csproj.CoreCompileInputs.cache

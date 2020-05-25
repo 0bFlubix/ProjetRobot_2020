@@ -61,5 +61,21 @@ namespace EventArgsLibrary
         public byte[] PacketData { get; set; }
     }
 
+    /*
+     * Data redirection, virtual loopback
+     */
+
+    //DataRedirector: data redirection bridge (to any)
+    public class RedirectedDataArgs : EventArgs
+    {
+        public byte[] Data { get; set; }
+    }
+
+    //HerkulexController: data redirection bridge (to data redirector)
+    public class RedirectSentDataOutputArgs : EventArgs
+    {
+        public byte[] Data { get; set; }
+    }
+
 
 }

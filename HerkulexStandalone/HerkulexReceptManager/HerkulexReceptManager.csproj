@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EventArgsLibrary">
-      <HintPath>..\EventArgsLibrary\bin\Debug\net48\EventArgsLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +43,16 @@
   <ItemGroup>
     <Compile Include="ReceptManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Interface_vs\EventArgsLibrary\EventArgsLibrary.csproj">
+      <Project>{50d84d2f-4461-4bb3-b302-aa430cf75c5d}</Project>
+      <Name>EventArgsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataRedirector\DataRedirector.csproj">
+      <Project>{6218bfd0-2332-45dd-ab0a-d1e9f0b90073}</Project>
+      <Name>DataRedirector</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

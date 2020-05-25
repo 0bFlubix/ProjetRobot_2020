@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="133.294" Width="249.763">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="68,43,0,0" TextWrapping="Wrap" Text="CRUSTY KEEPALIVE" VerticalAlignment="Top"/>
-
+        <Button x:Name="Button_EEPREAD" Content="EEPREAD" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_EEPREAD_Click"/>
+        <Button x:Name="Button_EEPWRITE" Content="EEP_WRITE" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_EEPWRITE_Click"/>
     </Grid>
 </Window>

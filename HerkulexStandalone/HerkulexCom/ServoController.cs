@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO.Ports;
-using System.Net.Sockets;
-using System.Net.Http;
+using DataRedirector;
+using EventArgsLibrary;
 
 /* Herkulex UART params:
 Stop Bit : 1
@@ -20,15 +16,17 @@ Minimum packet lengh is 7 bytes
 
 namespace HerkulexController
 {
-    public class HerkulexController
+    public class ServoController
     {
+        //new redirector!
+        Redirector DataRedirect = new Redirector();
 
         //Request a value From memory
-        public void EEP_ReadParam(SerialPort port, byte pID, byte memoryAddress)
+        public void EEP_ReadParam(SerialPort port, byte pID, SrvRegAddr memoryAddress)
         {
 
             byte packetSize = (byte)(9); //reading only one value so fixed length of 9 bytes in the packet (data[0] = addr data[1] = len@addr)
-            byte[] data = { memoryAddress, GetMemoryAddrLength(memoryAddress) };
+            byte[] data = { (byte)memoryAddress, GetMemoryAddrLength((byte)memoryAddress) };
 
             byte[] packet = new byte[packetSize]; //initializing packet to the right length
 
@@ -42,11 +40,14 @@ namespace HerkulexController
             packet[7] = data[0];
             packet[8] = data[1];
 
-            port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
+            //redirect data to OnControllerCommandSentToRedirectorBridge
+            RedirectSentData(packet);
+
+            //port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
         }
 
         //writes a value to the specified memory address
-        public void EEP_WriteParam(SerialPort port, byte pID, byte memoryAddress, byte[] dataToWrite)
+        public void EEP_WriteParam(SerialPort port, byte pID, SrvRegAddr memoryAddress, byte[] dataToWrite)
         {
             byte packetSize = (byte)(7 + dataToWrite.Length);
 
@@ -54,7 +55,7 @@ namespace HerkulexController
 
             packet[0] = 0xFF; //SOF1
             packet[1] = 0xFF; //SOF2
-            packet[3] = packetSize;
+            packet[2] = packetSize;
             packet[3] = pID;
             packet[4] = (byte)ToServoCommandSet.EEP_WRITE; //CMD is EEP_WRITE
             packet[5] = (byte)GetChecksum(packetSize, pID, (byte)ToServoCommandSet.EEP_WRITE, dataToWrite)[0]; //calc Check Sum1
@@ -63,10 +64,32 @@ namespace HerkulexController
             if (packetSize == 9) //if dataToWrite is two bytes long
                 packet[8] = dataToWrite[1];
 
-            port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
+            //redirect data to OnControllerCommandSentToRedirectorBridge
+            RedirectSentData(packet);
+
+            //port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
         }
 
+        //redirection
+        public void RedirectSentData(byte[] data)
+        {
+            OnControllerCommandSentToRedirectorBridge(data);
+        }
 
+        public event EventHandler<RedirectSentDataOutputArgs> OnControllerCommandSentToRedirectorBridgeEvent;
+
+        public virtual void OnControllerCommandSentToRedirectorBridge(byte[] data)
+        {
+            var handler = OnControllerCommandSentToRedirectorBridgeEvent;
+
+            if(handler != null)
+            {
+                handler(this, new RedirectSentDataOutputArgs
+                {
+                    Data = data
+                });
+            }
+        }
 
         //all controller commands set
         public enum ToServoCommandSet
@@ -99,7 +122,7 @@ namespace HerkulexController
         //all of the register addrs
         public enum SrvRegAddr
         {
-            ID = (byte)(0),                                 //Byte length: 1
+            ID = 0,                                 //Byte length: 1
             ACK_Policy = (byte)(1),                         //Byte length: 1
             Alarm_LED_Policy = (byte)(2),                   //Byte length: 1
             Torque_policy = (byte)(3),                      //Byte length: 1
@@ -146,7 +169,6 @@ namespace HerkulexController
             Absolute_Desired_Traject_Pos = (byte)(70),      //Byte length: 2
             Desired_Velocity = (byte)(72)                   //Byte length: 1
         }
-
 
         //all of the two bytes length only addresses (use in GetMemoryAddrLength)
         private enum TwoBytesCMD

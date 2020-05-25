@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using EventArgsLibrary;
+
 
 namespace HerkulexReceptManager
 {
@@ -34,12 +31,11 @@ namespace HerkulexReceptManager
             data
         }
 
-        //DataReceived input event, decoding the packet with a state machine for each received bytes
-        public void HerkulexDecodeIncommingPacket(object sender , DataReceivedArgs e)
+        //DataReceived input event //currently triggering from the data redirector
+        public void HerkulexDecodeIncommingPacket(object sender, RedirectedDataArgs e)
         {
             foreach(byte b in e.Data)
             {
-                
                 //state machine
                 switch (rcvState)
                 {
@@ -85,7 +81,7 @@ namespace HerkulexReceptManager
                             packetData[packetDataByteIndex] = b;
                             packetDataByteIndex++;
                         }
-                        else
+                        if(packetDataByteIndex == packetData.Length)
                         {
                             packetDataByteIndex = 0;
                             OnDataDecoded(packetSize, pID, cmd, checkSum1, checkSum2, packetData); //fire the decoded data event

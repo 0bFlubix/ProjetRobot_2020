@@ -35,18 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EventArgsLibrary">
-      <HintPath>..\..\Interface_vs\EventArgsLibrary\bin\Debug\net48\EventArgsLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="ExtendedSerialPort">
-      <HintPath>..\..\Interface_vs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll</HintPath>
-    </Reference>
-    <Reference Include="HerkulexController">
-      <HintPath>..\..\Interface_vs\HerkulexCom\bin\Debug\HerkulexController.dll</HintPath>
-    </Reference>
-    <Reference Include="HerkulexReceptManager">
-      <HintPath>..\..\Interface_vs\HerkulexReceptManager\bin\Debug\HerkulexReceptManager.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -105,6 +93,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Interface_vs\EventArgsLibrary\EventArgsLibrary.csproj">
+      <Project>{50d84d2f-4461-4bb3-b302-aa430cf75c5d}</Project>
+      <Name>EventArgsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Interface_vs\ExtendedSerialPort\ExtendedSerialPort.csproj">
+      <Project>{21ac599e-e3d5-4181-aa0f-7c2e00cca016}</Project>
+      <Name>ExtendedSerialPort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataRedirector\DataRedirector.csproj">
+      <Project>{6218bfd0-2332-45dd-ab0a-d1e9f0b90073}</Project>
+      <Name>DataRedirector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HerkulexCom\HerkulexController.csproj">
+      <Project>{ada2c3ab-18d0-4391-8066-272ab39102aa}</Project>
+      <Name>HerkulexController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HerkulexReceptManager\HerkulexReceptManager.csproj">
+      <Project>{bf6c02fd-e547-4be0-94b5-8f43cd4244b0}</Project>
+      <Name>HerkulexReceptManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

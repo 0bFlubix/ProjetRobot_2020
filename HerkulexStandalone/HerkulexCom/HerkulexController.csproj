@@ -7,8 +7,8 @@
     <ProjectGuid>{ADA2C3AB-18D0-4391-8066-272AB39102AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HerkulexCom</RootNamespace>
-    <AssemblyName>HerkulexCom</AssemblyName>
+    <RootNamespace>HerkulexController</RootNamespace>
+    <AssemblyName>HerkulexController</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HerkulexController.cs" />
+    <Compile Include="ServoController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Interface_vs\EventArgsLibrary\EventArgsLibrary.csproj">
+      <Project>{50d84d2f-4461-4bb3-b302-aa430cf75c5d}</Project>
+      <Name>EventArgsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataRedirector\DataRedirector.csproj">
+      <Project>{6218bfd0-2332-45dd-ab0a-d1e9f0b90073}</Project>
+      <Name>DataRedirector</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
