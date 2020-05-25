@@ -98,7 +98,7 @@ namespace UI
         //============================================================TEST ZONE 2=======================
         private void ControllerReceptionSide_OnHerkulexIncommingMessageDecodedEvent(object sender, HerkulexIncommingPacketDecodedArgs e)
         {
-            ComponentsValues.serialInputStream_TextMessages.Enqueue(e.PacketData.ToString());
+            ComponentsValues.serialInputStream_TextMessages.Enqueue(e.PacketSize.ToString());
         }
         //===============================================================================================
 
