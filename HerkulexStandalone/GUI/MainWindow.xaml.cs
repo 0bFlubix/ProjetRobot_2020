@@ -20,7 +20,7 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
-            Comport.Open();
+           // Comport.Open();
 
             ServoControl.OnControllerCommandSentToRedirectorBridgeEvent += Bridge.RedirectData;
             Bridge.OnRedirectedDataEvent += ReceptionController.HerkulexDecodeIncommingPacket;
@@ -40,7 +40,7 @@ namespace GUI
 
         private void Button_EEPWRITE_Click(object sender, RoutedEventArgs e)
         {
-            byte[] dataToWrite = { 0x5B, 0x22, 0x44, 0xFF };
+            byte[] dataToWrite = { 0x5B, 0x22, 0x44, 0xFF, 0x10, 0x98, 0x12 };
             ServoControl.EEP_WriteParam(Comport, 0x1A, ServoController.SrvRegAddr.Min_Voltage, dataToWrite); // 6.714DCV as min allowed voltage
         }
     }

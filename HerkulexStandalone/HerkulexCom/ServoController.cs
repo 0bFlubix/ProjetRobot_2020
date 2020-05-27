@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO.Ports;
+using System.Security.Permissions;
 using DataRedirector;
 using EventArgsLibrary;
 
@@ -43,7 +44,7 @@ namespace HerkulexController
             //redirect data to OnControllerCommandSentToRedirectorBridge
             RedirectSentData(packet);
 
-            //port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
+            port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
         }
 
         //writes a value to the specified memory address
@@ -67,7 +68,12 @@ namespace HerkulexController
             //redirect data to OnControllerCommandSentToRedirectorBridge
             RedirectSentData(packet);
 
-            //port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
+            port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
+        }
+
+        public void I_JOG()
+        {
+
         }
 
         //redirection
@@ -89,6 +95,19 @@ namespace HerkulexController
                     Data = data
                 });
             }
+        }
+        
+
+        public enum SET_PARAM
+        {
+            PositionControlJOG = 0,
+            InfiniteTurn = 1,
+            LedGreenOn = 1,
+            LedGreenOff = 0,
+            LedBlueOn = 1,
+            LedBlueOff = 0,
+            LedRedOn = 1,
+            LedRedOff = 0,
         }
 
         //all controller commands set
