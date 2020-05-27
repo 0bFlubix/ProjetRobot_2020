@@ -14,7 +14,6 @@ Maximum memory length for any adress in the servo memory is 2 bytes
 Minimum packet lengh is 7 bytes
 */
 
-
 namespace HerkulexController
 {
     public class ServoController
@@ -74,6 +73,11 @@ namespace HerkulexController
         public void I_JOG()
         {
 
+        }
+
+        struct JOG_TAG
+        {
+            public int oue;
         }
 
         //redirection

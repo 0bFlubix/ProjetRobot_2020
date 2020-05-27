@@ -20,7 +20,7 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
-           // Comport.Open();
+            Comport.Open();
 
             ServoControl.OnControllerCommandSentToRedirectorBridgeEvent += Bridge.RedirectData;
             Bridge.OnRedirectedDataEvent += ReceptionController.HerkulexDecodeIncommingPacket;

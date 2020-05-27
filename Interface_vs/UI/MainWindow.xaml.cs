@@ -73,14 +73,13 @@ namespace UI
             //block logic
             UI_Updater.Tick += UpdateUI;
            
-            /*
             SerialInputStream.DataReceived += FrameDecoder.DecodeMessage;
             FrameDecoder.OnDataDecodedEvent += FrameProcessor.ProcessMessage;
             FrameProcessor.OnTextMessageProcessedEvent += FrameProcessor_OnTextMessageProcessedEvent;
             FrameProcessor.OnCheckSumErrorOccuredEvent += FrameProcessor_OnCheckSumErrorOccuredEvent;
             FrameProcessor.OnIrMessageProcessedEvent += FrameProcessor_OnIrMessageProcessedEvent;
             FrameProcessor.OnSpeedMessageProcessedEvent += FrameProcessor_OnSpeedMessageProcessedEvent;
-            */
+
             SerialInputStream.Open();
 
             //====================================TEST ZONE========================================================

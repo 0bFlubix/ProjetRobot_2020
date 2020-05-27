@@ -114,20 +114,3 @@ void InitTimer4(void) {
     T4CONbits.TON = 1; // Enable Timer 
 } 
 
-//Interruption du timer 1
-void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)
-{
-    IFS0bits.T1IF = 0;
-
-
-    ADC1StartConversionSequence();
-    PWMUpdateSpeed();
-}
-
-//interrupt timer 4
-void __attribute__((interrupt, no_auto_psv)) _T4Interrupt(void) { 
-    IFS1bits.T4IF = 0; 
-
-    timestamp++; 
-    OperatingSystemLoop();
-} 

@@ -29,8 +29,8 @@ namespace EventArgsLibrary
     //MessageProcessor: Processed data is speed event
     public class SpeedDataProcessedArgs : EventArgs
     {
-        public byte SpeedGauche { get; set; }
-        public byte SpeedDroit { get; set; }
+        public sbyte SpeedGauche { get; set; }
+        public sbyte SpeedDroit { get; set; }
         public robot.MotorWays WayGauche { get; set; }
         public robot.MotorWays WayDroit { get; set; }
     }

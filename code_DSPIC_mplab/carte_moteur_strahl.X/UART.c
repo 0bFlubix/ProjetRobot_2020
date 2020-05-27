@@ -69,3 +69,8 @@ void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, unsigned ch
     SendMessage(msgToSend, sizeof(msgToSend));
 }
 
+void UartSendSpeedInfo(char speedGauche, char speedDroit)//using signed binary to distinguish between ways
+{
+    char speedData[2] = { speedGauche, speedDroit };
+    UartEncodeAndSendMessage(0x0040, 2, speedData);
+}

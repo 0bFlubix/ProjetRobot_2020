@@ -25,8 +25,8 @@ namespace Robot
         }
 
         public ushort[] distanceTelem = new ushort[5];
-        public ushort actualSpeedRoueGauche;
-        public ushort actualSpeedRoueDroite;
+        public sbyte actualSpeedRoueGauche;
+        public sbyte actualSpeedRoueDroite;
         public robot.MotorWays actualWayRoueGauche;
         public robot.MotorWays actualWayRoueDroite;
     }

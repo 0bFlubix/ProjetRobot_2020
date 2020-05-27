@@ -15,8 +15,8 @@ namespace MessageProcessor
             robot.MotorWays wayGauche;
             robot.MotorWays wayDroit;
 
-            byte speedGauche;
-            byte speedDroit;
+            sbyte speedGauche;
+            sbyte speedDroit;
 
             if (e.CheckSumErrorOccured)
                 OnCheckSumErrorOccured();
@@ -36,23 +36,20 @@ namespace MessageProcessor
                         break;
 
                     case 0x0040: //is SpeedMessage
-                        speedGauche = e.DecodedPayload[1];
-                        speedDroit = e.DecodedPayload[0];
+                        speedGauche = (sbyte)e.DecodedPayload[0];
+                        speedDroit = (sbyte)e.DecodedPayload[1];
 
-                        if ((byte)(speedGauche & 0b10000000) == 128) //first bit is a 1, going foward
+                        if (speedGauche >= 0) //if 0, saying foward...
                             wayGauche = robot.MotorWays.Avance;
                         else                                   //first bit is a 0, going reverse
                             wayGauche = robot.MotorWays.Recule;
 
-                        if((byte)(speedDroit & 0b10000000) == 128)   //first bit is a 1, going foward
+                        if(speedDroit >= 0)   //first bit is a 1, going foward
                             wayDroit = robot.MotorWays.Avance;
                         else                                   //first bit is a 0, going reverse
                             wayDroit = robot.MotorWays.Recule;
 
-                        speedDroit &= 0x7F; //set the first bit to 0
-                        speedGauche &= 0x7F;//set the first bit to 0
-
-                        OnSpeedMessageProcessed(e.DecodedPayload[1], e.DecodedPayload[0],
+                        OnSpeedMessageProcessed(speedGauche, speedDroit,
                                                 wayGauche, wayDroit);
 
 
@@ -98,7 +95,7 @@ namespace MessageProcessor
                 });
             }
         }
-        public virtual void OnSpeedMessageProcessed(byte speedGauche, byte speedDroit, robot.MotorWays wayGauche, robot.MotorWays wayDroit)
+        public virtual void OnSpeedMessageProcessed(sbyte speedGauche, sbyte speedDroit, robot.MotorWays wayGauche, robot.MotorWays wayDroit)
         {
             var handler = OnSpeedMessageProcessedEvent;
             if(handler != null)
