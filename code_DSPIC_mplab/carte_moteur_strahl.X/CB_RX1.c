@@ -1,8 +1,9 @@
-
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "CB_RX1.h"
+#include "IO.h"
+
 
 #define CBRX1_BUFFER_SIZE 128
 
@@ -12,6 +13,7 @@ int cbRx1Head = 0;
 int cbRx1Tail = 0;
 unsigned char cbRx1Buffer[CBRX1_BUFFER_SIZE];
 
+//add a byte to the FIFO
 void CB_RX1_Add(unsigned char value)
 {
     if(CB_RX1_GetRemainingSize()>0)
@@ -24,6 +26,7 @@ void CB_RX1_Add(unsigned char value)
     }
 }
 
+//read and returns a byte from FIFO
 unsigned char CB_RX1_Get(void)
 {
     unsigned char value = cbRx1Buffer[cbRx1Tail];
@@ -35,6 +38,7 @@ unsigned char CB_RX1_Get(void)
     return value;
 }
 
+//returns DataAvailable flag
 unsigned char CB_RX1_IsDataAvailable(void)
 {
     if(cbRx1Head != cbRx1Tail)
@@ -43,7 +47,9 @@ unsigned char CB_RX1_IsDataAvailable(void)
         return 0;
 }
 
+//UART byte received interrupt
 void __attribute__((interrupt, no_auto_psv)) _U1RXInterrupt(void) {
+    
     IFS0bits.U1RXIF = 0; // clear RX interrupt flag
     /* check for receive errors */
     if (U1STAbits.FERR == 1)
@@ -58,6 +64,7 @@ void __attribute__((interrupt, no_auto_psv)) _U1RXInterrupt(void) {
       CB_RX1_Add(U1RXREG); 
 }
 
+//returns the number of free bytes left remaining in the FIFO, refer to CBRX1_BUFFER_SIZE to edit the maximum size of the FIFO
 int CB_RX1_GetRemainingSize(void)
 {
     int rSizeRecep;
@@ -65,12 +72,14 @@ int CB_RX1_GetRemainingSize(void)
     return rSizeRecep;
 }
 
+//returns the number of recived bytes left in the FIFO
 int CB_RX1_GetDataSize(void)
 {
     int rSizeRecep;
     if(cbRx1Tail > cbRx1Head)
-        rSizeRecep = CBRX1_BUFFER_SIZE - cbRx1Head + cbRx1Tail;
+        rSizeRecep = CBRX1_BUFFER_SIZE - cbRx1Tail + cbRx1Head;
     else
         rSizeRecep = cbRx1Head - cbRx1Tail;
     return rSizeRecep;
 }
+

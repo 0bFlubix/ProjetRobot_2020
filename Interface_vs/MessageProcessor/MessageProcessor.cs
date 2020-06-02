@@ -3,10 +3,16 @@ using System.Text;
 using EventArgsLibrary;
 using Robot;
 
+/// <summary>
+/// this class is used to process the previously decoded message and output events
+/// depending on the message for a simpler, higer level use.
+/// </summary>
+
 namespace MessageProcessor
 {
     public class msgProcessor
     { 
+        //contains the processor state machine
         public void ProcessMessage(object Sender, DataDecodedArgs e)
         {
             ushort function = e.DecodedFunction;

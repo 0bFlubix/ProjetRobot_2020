@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Robot
 {
-    //modèle du robot
+    //robt state enums
     public class robot
     {
         public enum Motors
@@ -25,8 +25,8 @@ namespace Robot
         }
 
         public ushort[] distanceTelem = new ushort[5];
-        public sbyte actualSpeedRoueGauche;
-        public sbyte actualSpeedRoueDroite;
+        public sbyte actualSpeedRoueGauche; //signed
+        public sbyte actualSpeedRoueDroite; //signed
         public robot.MotorWays actualWayRoueGauche;
         public robot.MotorWays actualWayRoueDroite;
     }

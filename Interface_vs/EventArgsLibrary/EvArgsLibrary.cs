@@ -1,6 +1,9 @@
 ﻿using System;
 using Robot;
 
+/// <summary>
+/// All of the event args, mendatory in every class that uses events
+/// </summary>
 
 namespace EventArgsLibrary
 {

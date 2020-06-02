@@ -47,5 +47,11 @@
     <Compile Include="MessageDecoder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\main_Interface\MessageEncoder\MessageEncoder.csproj">
+      <Project>{4e00d6ef-3756-4666-afab-38ea879066ce}</Project>
+      <Name>MessageEncoder</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
