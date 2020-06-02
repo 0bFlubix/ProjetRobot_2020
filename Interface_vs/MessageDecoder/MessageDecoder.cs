@@ -1,57 +1,36 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using EventArgsLibrary;
+using MessageEncoder;
+
+/// <summary>
+/// This class is used to decode raw incomming messages from the robot
+/// and extracts all of the packet info, the output event also returns a CheckSumErrorOccured flag.
+/// to function properly the library MessageEncoder is needed which provides the CalculateCheckSum method.
+/// Output event name: OnDataDecoded (DataDecodedArgs)
+/// </summary>
 
 namespace MessageDecoder
 {
     public class msgDecoder
     {
+        Encoder mesEncoder = new Encoder(); //init a new encoder to calc checksums
+        
         StateReception rcvState = StateReception.Waiting;
 
         //shared message params
-        public ushort msgDecodedFunction = 0;
-        public ushort msgDecodedPayloadLength = 0;
-        public byte[] msgDecodedPayload;
-        public byte receivedCheckSum = 0x00;
-        public bool CheckSumErrorOccured = false;
+        ushort msgDecodedFunction = 0;
+        ushort msgDecodedPayloadLength = 0;
+        byte[] msgDecodedPayload;
+        byte receivedCheckSum = 0x00;
+        bool CheckSumErrorOccured = false;
 
         byte calculatedCheckSum = 0x00;
         ushort msgDecodedPayloadIndex = 0;
 
         //messageAvailable shared var
         public bool messageAvailable = false;
-
-        //sends encoded UART frames
-        public void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, byte[] msgPayload, SerialPort port)
-        {
-            byte[] msgToSend = new byte[msgPayloadLength + 6];
-
-            msgToSend[0] = 0xFE;    //SOF = 0xFE
-            msgToSend[1] = (byte)msgFunction;
-            msgToSend[2] = (byte)(msgFunction >> 8);
-            msgToSend[3] = (byte)msgPayloadLength;
-            msgToSend[4] = (byte)(msgPayloadLength >> 8);
-
-            for (int i = 0; i < msgPayloadLength; i++)  //adds payload to the msgTYoSend Bytelist from byte 5 to msgPayloadLength
-                msgToSend[i + 5] = msgPayload[i];
-
-            msgToSend[5 + msgPayloadLength] = CalculateChecksum(msgFunction, msgPayloadLength, msgPayload); //adds checkSum value to the EOF
-            port.Write(msgToSend, 0, msgToSend.Length);
-        }
-
-        //calculates the UART frame checksum
-        public byte CalculateChecksum(int msgFunction, int msgPayloadLength, byte[] msgPayload)
-        {
-            byte checksum = 0x00;
-
-            checksum ^= (byte)(0xFE ^ (byte)msgFunction ^ (byte)(msgFunction >> 8));
-
-            for (int i = 0; i < msgPayloadLength; i++)
-                checksum ^= msgPayload[i];
-
-            return checksum;
-        }
 
         //enum of reception states
         public enum StateReception
@@ -123,7 +102,7 @@ namespace MessageDecoder
 
                     case StateReception.CheckSum:
                         receivedCheckSum = c;
-                        calculatedCheckSum = CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload);
+                        calculatedCheckSum = mesEncoder.CalculateChecksum(msgDecodedFunction, msgDecodedPayloadLength, msgDecodedPayload);
                         messageAvailable = true;
                         if (calculatedCheckSum == receivedCheckSum)
                         {

@@ -13,10 +13,18 @@
 #include "CB_TX1.h"
 #include "CB_RX1.h"
 
+    unsigned char rcvState = Waiting;
+    unsigned short msgDecodedFunction;
+    unsigned short msgDecodedPayloadLength;
+    unsigned char* msgDecodedPayload;
+    unsigned char receivedCheckSum;
+    unsigned char CheckSumErrorOccured;
+    unsigned char calculatedCheckSum;
+    unsigned char msgDecodedPayloadIndex;
 
 
-
-int main(void) {
+int main(void) 
+{
     //init stuff
     InitOscillator();
     InitTimer23();
@@ -26,31 +34,22 @@ int main(void) {
     InitPWM();
     InitADC1();
     InitUART();
-
-        /* LOOPBACK TEST
-        int i;
-        for(i = 0; i < CB_RX1_GetDataSize(); i++)
-        {
-            unsigned char c = CB_RX1_Get();
-            SendMessage(&c, 1);
-        }
-
-       */
     
-        unsigned char text[7] = "UART_OK";
-        unsigned char speedTransmit[2] = { 0x0A, 0xFA };
-        unsigned long timeSample = 0;
-
-        while(1)
+   
+    unsigned long timeSVar = 0;
+    unsigned char speedG = 0;
+    unsigned char speedD = 0;
+    while(1)
+    {
+        if(timestamp - timeSVar > 200)
         {
-            if(timestamp - timeSample >= 100)
-            {
-                speedTransmit[0] += 10;
-                speedTransmit[1] += 1;
-                timeSample = timestamp;
-                UartSendSpeedInfo(speedTransmit[0], speedTransmit[1]);
-                UartEncodeAndSendMessage(0x0080, 7, text);
-            }      
+            UartSendSpeedInfo(speedG, speedD);
+            speedG += 2;
+            speedD += 1;
+            timeSVar = timestamp;
         }
+         
     }
+}
 
+   

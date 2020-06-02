@@ -7,6 +7,7 @@
 #define BAUDRATE 115200
 #define BRGVAL ((FCY/BAUDRATE)/4)-1
 
+
 void InitUART(void)
 {
     U1MODEbits.STSEL = 0; // 1-stop bit
@@ -71,6 +72,6 @@ void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, unsigned ch
 
 void UartSendSpeedInfo(char speedGauche, char speedDroit)//using signed binary to distinguish between ways
 {
-    char speedData[2] = { speedGauche, speedDroit };
+    unsigned char speedData[2] = { speedGauche, speedDroit };
     UartEncodeAndSendMessage(0x0040, 2, speedData);
 }

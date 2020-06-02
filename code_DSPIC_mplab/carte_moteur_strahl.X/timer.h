@@ -10,6 +10,7 @@
 
 void InitTimer23(void);
 void InitTimer1(void);
+void InitTimer4(void);
 extern unsigned long timestamp;
 
 #endif /*TIMER_H*/
