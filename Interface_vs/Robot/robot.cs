@@ -14,9 +14,16 @@ namespace Robot
             Droit, Gauche
         }
 
+        public enum LED
+        {
+            ORANGE = 1,
+            BLUE = 2,
+            WHITE = 3
+        }
+
         public enum Sensors
         {
-            Telem0, Telem1, Telem2, Telem3, Telem4
+            
         }
 
         public enum MotorWays

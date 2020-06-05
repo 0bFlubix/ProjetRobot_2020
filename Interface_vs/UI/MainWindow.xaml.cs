@@ -46,7 +46,7 @@ namespace UI
         {
             InitializeComponent();
             
-            SerialStream = new ReliableSerialPort("COM1", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+            SerialStream = new ReliableSerialPort("COM6", 115200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
             FrameDecoder = new msgDecoder();
             FrameProcessor = new msgProcessor();
             UI_Updater = new DispatcherTimer();
@@ -122,6 +122,27 @@ namespace UI
         {
             MsgEncoder.UartSendSpeedCommand(SerialStream, Convert.ToSByte(TextBox_SpeedGauche.Text), Convert.ToSByte(TextBox_SpeedDroit.Text));
             ComponentsValues.DebugMessages.Enqueue("SpeedCMD out! Gauche:" + TextBox_SpeedGauche.Text + " Gauche:" + TextBox_SpeedDroit.Text);
+        }
+
+        byte lbstate = 0x00;
+        private void TGLBLUE_Click(object sender, RoutedEventArgs e)
+        {
+            lbstate ^= 0x01;
+            MsgEncoder.UartSendLedCommand(SerialStream, robot.LED.BLUE, lbstate);
+        }
+
+        byte lostate = 0x00;
+        private void TGLORG_Click(object sender, RoutedEventArgs e)
+        {
+            lostate ^= 0x01;
+            MsgEncoder.UartSendLedCommand(SerialStream, robot.LED.ORANGE, lostate);
+        }
+
+        byte lwstate = 0x00;
+        private void TGLWHT_Click(object sender, RoutedEventArgs e)
+        {
+            lwstate ^= 0x01;
+            MsgEncoder.UartSendLedCommand(SerialStream, robot.LED.WHITE, lwstate);
         }
     }
 }

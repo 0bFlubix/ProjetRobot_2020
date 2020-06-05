@@ -31,11 +31,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\flore\\Desktop\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
       "projectName": "EventArgsLibrary",
-      "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "projectPath": "C:\\Users\\flore\\Desktop\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
       "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\obj\\",
+      "outputPath": "C:\\Users\\flore\\Desktop\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,8 +51,8 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj": {
-              "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj"
+            "C:\\Users\\flore\\Desktop\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj": {
+              "projectPath": "C:\\Users\\flore\\Desktop\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj"
             }
           }
         }

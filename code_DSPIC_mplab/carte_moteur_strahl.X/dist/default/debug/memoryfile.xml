@@ -5,14 +5,29 @@
     <memory name="data">
       <units>bytes</units>
       <length>49152</length>
+<<<<<<< HEAD
       <used>414</used>
       <free>48738</free>
+=======
+      <used>432</used>
+      <free>48720</free>
+>>>>>>> parent of 9bff6f9... Speed fromBotToPc OK
     </memory>
     <memory name="program">
       <units>bytes</units>
       <length>524514</length>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
       <used>5958</used>
       <free>518556</free>
+=======
+      <used>7728</used>
+      <free>516786</free>
+>>>>>>> parent of 9bff6f9... Speed fromBotToPc OK
+=======
+      <used>5622</used>
+      <free>518892</free>
+>>>>>>> Stashed changes
     </memory>
   </executable>
 </project>

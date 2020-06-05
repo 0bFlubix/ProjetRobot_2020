@@ -8,6 +8,15 @@
 #ifndef ROBOT_H
 #define	ROBOT_H
 
+#define SPEED 0x0040
+#define TEXT 0x0080
+#define LED 0x0020
+
+#define CODE_LED_ORANGE 1
+#define CODE_LED_BLEUE 2
+#define CODE_LED_BLANCHE 3
+
+
 typedef struct robotStateBITS
 {
     union

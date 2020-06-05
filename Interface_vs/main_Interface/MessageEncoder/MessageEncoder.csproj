@@ -44,5 +44,11 @@
     <Compile Include="Encoder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Robot\Robot.csproj">
+      <Project>{e6e3711e-156d-4026-9880-ff58af14e179}</Project>
+      <Name>Robot</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

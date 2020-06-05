@@ -19,3 +19,14 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\Ev
 D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.pdb
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\bin\Debug\net48\EventArgsLibrary.dll
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\bin\Debug\net48\EventArgsLibrary.pdb
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\bin\Debug\net48\Robot.dll
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\bin\Debug\net48\Robot.pdb
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.csprojAssemblyReference.cache
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.AssemblyInfoInputs.cache
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.AssemblyInfo.cs
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.csproj.CopyComplete
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.dll
+C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\EventArgsLibrary\obj\Debug\net48\EventArgsLibrary.pdb

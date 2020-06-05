@@ -16,7 +16,6 @@
 
 void InitUART(void);
 void SendMessageDirect(unsigned char* message, int length);//WORKING
-void SendMessageDirect(unsigned char* message, int length);//WORKING
 void UartEncodeAndSendMessage(int msgFunction, int msgPayloadLength, unsigned char *  msgPayload);//not tested
 void UartSendSpeedInfo(char speedGauche, char speedDroit);//WORKING, using signed binary to distinguish between ways
 
