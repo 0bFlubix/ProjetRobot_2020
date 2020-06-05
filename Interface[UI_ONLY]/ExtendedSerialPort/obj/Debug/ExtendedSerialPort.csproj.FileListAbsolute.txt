@@ -1,0 +1,37 @@
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Github\Enseignement\Projet électronique\Code Source\ReliableSerialPort\ReliableSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Users\Valentin\Desktop\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Users\Valentin\Desktop\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Users\Valentin\Desktop\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\robotInterface\externLibs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface_vs\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb

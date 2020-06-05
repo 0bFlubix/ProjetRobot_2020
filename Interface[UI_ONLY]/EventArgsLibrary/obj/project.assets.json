@@ -1,0 +1,72 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Robot/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Robot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robot.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Robot/1.0.0": {
+      "type": "project",
+      "path": "../Robot/Robot.csproj",
+      "msbuildProject": "../Robot/Robot.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Robot >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\flore\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "projectName": "EventArgsLibrary",
+      "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\EventArgsLibrary\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {
+            "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj": {
+              "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface_vs\\Robot\\Robot.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
