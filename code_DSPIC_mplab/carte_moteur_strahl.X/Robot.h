@@ -29,12 +29,22 @@ typedef struct robotStateBITS
             float vitesseGaucheCommandeCourante;
             float vitesseDroiteConsigne;
             float vitesseDroiteCommandeCourante;
+
+            float QeiDroitPosition;
+            float QeiGauchePosition;
             
-            float distanceTelemetre0; 
-            float distanceTelemetre1; 
-            float distanceTelemetre2; 
-            float distanceTelemetre3; 
-            float distanceTelemetre4; 
+            double vitesseDroitFromOdometry;
+            double vitesseGaucheFromOdometry;
+            double vitesseLineaireFromOdometry;
+            double vitesseAngulaireFromOdometry;
+            
+            double xPosFromOdometry_1;
+            double xPosFromOdometry;
+            double yPosFromOdometry_1;
+            double yPosFromOdometry;
+            double angleRadianFromOdometry_1;
+            double angleRadianFromOdometry;
+            
         };
     };
 }ROBOT_STATE_BITS;

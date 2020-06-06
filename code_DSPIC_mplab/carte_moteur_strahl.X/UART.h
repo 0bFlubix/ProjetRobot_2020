@@ -5,6 +5,7 @@
 #define CMD_TEXT 0x80
 #define CMD_LED 0x20
 #define CMD_IR 0x30 //old
+#define CMD_POSITION_DATA 0x0061
 
 #define Waiting 0
 #define FunctionMSB 1

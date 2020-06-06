@@ -12,6 +12,7 @@
 #include "UART.h"
 #include "CB_TX1.h"
 #include "CB_RX1.h"
+#include "QEI.h"
 
     unsigned char rcvState = Waiting;
     unsigned short msgDecodedFunction;
@@ -115,6 +116,8 @@
         
     }
 
+    unsigned long TSample = 0;
+    
 int main(void) 
 {
     //init stuff
@@ -126,6 +129,8 @@ int main(void)
     InitPWM();
     InitADC1();
     InitUART();
+    InitQEI1();
+    InitQEI2();
     
     while(1)
     {
@@ -137,6 +142,7 @@ int main(void)
                 case SPEED:
                     PWMSetSpeedConsigne((char)ReadData(msgDecodedPayload, msgDecodedPayloadLength)[0], MOTEUR_GAUCHE);
                     PWMSetSpeedConsigne((char)ReadData(msgDecodedPayload, msgDecodedPayloadLength)[1], MOTEUR_DROIT);
+                    
                 break;
 
                 case LED:

@@ -1,0 +1,43 @@
+C:\Github\RoboCup2020\C#\Utilities\bin\Debug\Utilities.dll
+C:\Github\RoboCup2020\C#\Utilities\bin\Debug\Utilities.pdb
+C:\Github\RoboCup2020\C#\Utilities\obj\Debug\Utilities.dll
+C:\Github\RoboCup2020\C#\Utilities\obj\Debug\Utilities.pdb
+C:\Github\RoboCup2020\C#\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\GEII Robot\Desktop\Projet_Coupe_Cachan\Utilities\bin\Debug\Utilities.dll
+C:\Users\GEII Robot\Desktop\Projet_Coupe_Cachan\Utilities\bin\Debug\Utilities.pdb
+C:\Users\GEII Robot\Desktop\Projet_Coupe_Cachan\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\GEII Robot\Desktop\Projet_Coupe_Cachan\Utilities\obj\Debug\Utilities.dll
+C:\Users\GEII Robot\Desktop\Projet_Coupe_Cachan\Utilities\obj\Debug\Utilities.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\Utilities.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\Utilities.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\obj\Debug\Utilities.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\obj\Debug\Utilities.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Charting.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Core.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Data.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Drawing.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Charting.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Core.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Data.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\bin\Debug\SciChart.Drawing.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_280120\lib lidar\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\Utilities.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\Utilities.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Charting.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Core.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Data.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Drawing.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Charting.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Core.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Data.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\SciChart.Drawing.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.pdb
+D:\qei\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\Utilities.dll
+D:\qei\E&R_AxelAdrien_300120\lib lidar\Utilities\bin\Debug\Utilities.pdb
+D:\qei\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+D:\qei\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.dll
+D:\qei\E&R_AxelAdrien_300120\lib lidar\Utilities\obj\Debug\Utilities.pdb

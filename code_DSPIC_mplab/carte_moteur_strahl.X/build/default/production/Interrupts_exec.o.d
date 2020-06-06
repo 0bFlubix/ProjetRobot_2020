@@ -3,4 +3,5 @@ Interrupts_exec.c  \
 timer.h  \
  IO.h  \
 main.h  \
-PWM.h 
+PWM.h  \
+QEI.h 

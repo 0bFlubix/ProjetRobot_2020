@@ -6,6 +6,7 @@ using EventArgsLibrary;
 using ExtendedSerialPort;
 using MessageDecoder;
 using MessageProcessor;
+using MessageEncoder;
 using Robot;
 using PortSupervisor;
 using HerkulexController;
@@ -35,7 +36,7 @@ namespace UI
         ReliableSerialPort SerialStream;
         msgDecoder FrameDecoder;
         msgProcessor FrameProcessor;
-        MessageEncoder.Encoder MsgEncoder = new MessageEncoder.Encoder();
+        Encoder MsgEncoder = new MessageEncoder.Encoder();
         DispatcherTimer UI_Updater;
         robot RobotModel;
 

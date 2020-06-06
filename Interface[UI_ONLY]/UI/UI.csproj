@@ -110,13 +110,13 @@
       <Project>{ada2c3ab-18d0-4391-8066-272ab39102aa}</Project>
       <Name>HerkulexController</Name>
     </ProjectReference>
-    <ProjectReference Include="..\main_Interface\MessageEncoder\MessageEncoder.csproj">
-      <Project>{4e00d6ef-3756-4666-afab-38ea879066ce}</Project>
-      <Name>MessageEncoder</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MessageDecoder\MessageDecoder.csproj">
       <Project>{a30a8a20-11db-46f7-ba8d-6162c083d06c}</Project>
       <Name>MessageDecoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessageEncoder\MessageEncoder.csproj">
+      <Project>{4e00d6ef-3756-4666-afab-38ea879066ce}</Project>
+      <Name>MessageEncoder</Name>
     </ProjectReference>
     <ProjectReference Include="..\MessageProcessor\MessageProcessor.csproj">
       <Project>{9cfa6e45-58d5-4829-aaec-133763c96423}</Project>

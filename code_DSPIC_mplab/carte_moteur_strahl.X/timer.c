@@ -3,6 +3,7 @@
 #include "IO.h"
 #include "main.h"
 #include "PWM.h"
+#include "QEI.h"
 
 
 unsigned long timestamp = 0; 
@@ -70,7 +71,8 @@ T1CONbits.TCKPS = 0b10; //Prescaler
 T1CONbits.TCS = 0; //clock source = internal clock
 //PR1 =6250;
 
-SetFreqTimer1(100);
+SetFreqTimer1(FREQ_ECH_QEI); //set timer frequency at QUEI sampling frequency
+
 IFS0bits.T1IF = 0; // Clear Timer Interrupt Flag
 IEC0bits.T1IE = 1; // Enable Timer interrupt
 T1CONbits.TON = 1; // Enable Timer

@@ -1,0 +1,11 @@
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.1\EventArgsLibrary.deps.json
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.1\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.1\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.1\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.1\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.AssemblyInfoInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.AssemblyInfo.cs
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.1\EventArgsLibrary.pdb

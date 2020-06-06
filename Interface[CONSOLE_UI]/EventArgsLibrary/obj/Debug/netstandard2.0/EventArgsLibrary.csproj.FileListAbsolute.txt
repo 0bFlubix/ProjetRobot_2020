@@ -1,0 +1,11 @@
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.0\EventArgsLibrary.deps.json
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.0\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.0\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.AssemblyInfoInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.AssemblyInfo.cs
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.0\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\bin\Debug\netstandard2.0\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\EventArgsLibrary\obj\Debug\netstandard2.0\EventArgsLibrary.csproj.CopyComplete

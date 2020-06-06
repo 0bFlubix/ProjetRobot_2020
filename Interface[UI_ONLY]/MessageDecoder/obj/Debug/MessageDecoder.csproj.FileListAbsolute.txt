@@ -34,3 +34,16 @@ C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\Me
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.csproj.CopyComplete
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.dll
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\MessageDecoder\obj\Debug\MessageDecoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\obj\Debug\MessageDecoder.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\obj\Debug\MessageDecoder.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\obj\Debug\MessageDecoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\obj\Debug\MessageDecoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\MessageDecoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\MessageDecoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\MessageEncoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\MessageEncoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageDecoder\obj\Debug\MessageDecoder.csproj.CopyComplete
