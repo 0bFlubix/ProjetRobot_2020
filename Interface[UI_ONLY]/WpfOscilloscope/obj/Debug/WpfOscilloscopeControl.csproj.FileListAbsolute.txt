@@ -86,3 +86,27 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\Wpf
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Charting.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Core.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Data.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Drawing.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\Utilities.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\Utilities.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Charting.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Core.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Data.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\bin\Debug\SciChart.Drawing.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csprojAssemblyReference.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscope.g.cs
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.lref
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscope.baml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.g.resources
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.Properties.Resources.resources
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.GenerateResource.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CoreCompileInputs.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CopyComplete
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[UI_ONLY]\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.pdb

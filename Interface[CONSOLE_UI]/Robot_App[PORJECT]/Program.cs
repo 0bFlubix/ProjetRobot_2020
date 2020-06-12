@@ -27,7 +27,7 @@ namespace Robot_App
 
         #region class_init
 
-        static ReliableSerialPort SerialStream = new ReliableSerialPort("COM6", 115200, Parity.None, 8, StopBits.One);
+        static ReliableSerialPort SerialStream = new ReliableSerialPort("COM1", 115200, Parity.None, 8, StopBits.One);
         static msgDecoder MsgDecoder = new msgDecoder();
         static msgProcessor MsgProcessor = new msgProcessor();
         static Encoder MsgEncoder = new Encoder();
@@ -53,7 +53,7 @@ namespace Robot_App
             ////block logic
             SerialStream.DataReceived += MsgDecoder.DecodeMessage;
             MsgDecoder.OnDataDecodedEvent += MsgProcessor.ProcessMessage;
-            MsgProcessor.OnPositionDataProcessedEvent += MsgProcessor_OnPositionDataProcessedEvent;
+            //MsgProcessor.OnPositionDataProcessedEvent += MsgProcessor_OnPositionDataProcessedEvent;
             MsgProcessor.OnAngularSpeedConsigneAckFromRobotEvent += MsgProcessor_OnAngularSpeedConsigneAckFromRobotEvent;
             MsgProcessor.OnLinearSpeedConsigneAckFromRobotEvent += MsgProcessor_OnLinearSpeedConsigneAckFromRobotEvent;
 
@@ -141,6 +141,7 @@ namespace Robot_App
             {
                 interfaceRobot = new RobotInterface();
                 interfaceRobot.ShowDialog();
+                MsgProcessor.OnPositionDataProcessedEvent += interfaceRobot.OnPositionDataProcessedEvent;
             });
             ui_thread.SetApartmentState(ApartmentState.STA);
             ui_thread.Start();

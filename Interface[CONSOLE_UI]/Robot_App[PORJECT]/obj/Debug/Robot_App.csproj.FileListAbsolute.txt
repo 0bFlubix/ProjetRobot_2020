@@ -57,3 +57,40 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Deb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.xml
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.exe.config
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.exe
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\EventArgsLibrary.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\ExtendedSerialPort.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageDecoder.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageEncoder.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageProcessor.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfRobotInterface.exe
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Utilities.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfOscilloscopeControl.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Charting.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Drawing.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Core.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\EventArgsLibrary.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageDecoder.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageEncoder.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\MessageProcessor.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfRobotInterface.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfRobotInterface.exe.config
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Utilities.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfOscilloscopeControl.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Charting.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Drawing.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Core.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.xml
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\obj\Debug\Robot_App.csprojAssemblyReference.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\obj\Debug\Robot_App.csproj.CoreCompileInputs.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\obj\Debug\Robot_App.csproj.CopyComplete
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\obj\Debug\Robot_App.exe
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\obj\Debug\Robot_App.pdb

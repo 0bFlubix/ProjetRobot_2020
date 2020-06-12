@@ -95,5 +95,11 @@ namespace WpfRobotInterface
             if (e.Key == Key.Space)
                 toggleFreeze ^= 0x01;
         }
+
+        //Incoming Events
+        public void OnPositionDataProcessedEvent(object sender, PositionDataProcessedArgs e)
+        {
+
+        }
     }
 }

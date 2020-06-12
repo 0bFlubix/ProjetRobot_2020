@@ -42,3 +42,10 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Deb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csprojAssemblyReference.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CoreCompileInputs.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.csproj.CopyComplete
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\ExtendedSerialPort\obj\Debug\ExtendedSerialPort.pdb

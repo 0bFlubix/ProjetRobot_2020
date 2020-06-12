@@ -59,3 +59,22 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Utilities.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageProcessor.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageProcessor.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\EventArgsLibrary.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageDecoder.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Robot.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Utilities.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageEncoder.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\EventArgsLibrary.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageDecoder.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Robot.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Utilities.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageEncoder.pdb
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.csprojAssemblyReference.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.csproj.CoreCompileInputs.cache
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.csproj.CopyComplete
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.dll
+C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.pdb
