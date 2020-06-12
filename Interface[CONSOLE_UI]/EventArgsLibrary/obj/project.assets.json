@@ -26,35 +26,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Valentin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\flore\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\Etudiants GEII\\Robot_Florent_Barthelemy\\Interface[CONSOLE_UI]\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "projectUniqueName": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface[CONSOLE_UI]\\EventArgsLibrary\\EventArgsLibrary.csproj",
       "projectName": "EventArgsLibrary",
-      "projectPath": "C:\\Github\\Etudiants GEII\\Robot_Florent_Barthelemy\\Interface[CONSOLE_UI]\\EventArgsLibrary\\EventArgsLibrary.csproj",
-      "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\Etudiants GEII\\Robot_Florent_Barthelemy\\Interface[CONSOLE_UI]\\EventArgsLibrary\\obj\\",
+      "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface[CONSOLE_UI]\\EventArgsLibrary\\EventArgsLibrary.csproj",
+      "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface[CONSOLE_UI]\\EventArgsLibrary\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Github\\Etudiants GEII\\Robot_Florent_Barthelemy\\Interface[CONSOLE_UI]\\Robot\\Robot.csproj": {
-              "projectPath": "C:\\Github\\Etudiants GEII\\Robot_Florent_Barthelemy\\Interface[CONSOLE_UI]\\Robot\\Robot.csproj"
+            "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface[CONSOLE_UI]\\Robot\\Robot.csproj": {
+              "projectPath": "D:\\code\\IUT\\S2\\ProjetRobot_2020\\Interface[CONSOLE_UI]\\Robot\\Robot.csproj"
             }
           }
         }
@@ -67,7 +65,7 @@
     },
     "frameworks": {
       "net48": {
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
