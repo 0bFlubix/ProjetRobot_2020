@@ -6,7 +6,7 @@
             <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/main.c</file>
             <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/QEI.c</file>
             <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/Interrupts_exec.c</file>
-            <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/UART.c</file>
+            <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/PWM.c</file>
             <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/Robot.h</file>
             <file>file:/D:/code/IUT/S2/ProjetRobot_2020/code_DSPIC_mplab/carte_moteur_strahl.X/QEI.h</file>
         </group>

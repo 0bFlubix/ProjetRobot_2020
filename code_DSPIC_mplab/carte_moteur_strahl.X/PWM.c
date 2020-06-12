@@ -141,7 +141,7 @@ void PWMSetSpeedConsignePolaire()
     //correction angulaire
     //double erreurVitesseAngulaire = robotState.vitesseAngulaireConsigne - robotState.vitesseAngulaireFromOdometry; //mod
     
-    double correction_P_angulaire = 
+    double correction_P_angulaire = Kp
     
     //double sortieCorrecteurAngulaire = Kpa * erreurVitesseAngulaire;//mod
     double correctionVitesseAngulairePourcent = robotState.vitesseAngulaireConsigne;// * COEFF_VITESSE_ANGULAIRE_PERCENT ;

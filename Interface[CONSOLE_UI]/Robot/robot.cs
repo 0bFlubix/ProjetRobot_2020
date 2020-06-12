@@ -31,6 +31,8 @@ namespace Robot
             Avance, Recule
         }
 
+        public static float vitesseLineaireConsigne;
+        public static float vitesseAngulaireConsigne;
         public static float vitesseLineaireFromOdometry;
         public static float vitesseAngulaireFromOdometry;
         public static float xPositionFromOdometry;
