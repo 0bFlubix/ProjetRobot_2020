@@ -45,8 +45,6 @@ namespace Robot_App
         [STAThread]
         static void Main(string[] args)
         {
-            if (usingRobotInterface)
-                StartRobotInterface();
 
             SerialStream.Open();
 
@@ -58,6 +56,9 @@ namespace Robot_App
             MsgProcessor.OnLinearSpeedConsigneAckFromRobotEvent += MsgProcessor_OnLinearSpeedConsigneAckFromRobotEvent;
 
             //MsgEncoder.UartSendSpeedCommand(SerialStream, 0, 0);
+
+            if (usingRobotInterface)
+                StartRobotInterface();
 
             ConsoleWriteColoredText("Initialized", ConsoleColor.Yellow);
             while(appLocked)
