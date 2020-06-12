@@ -132,9 +132,22 @@ int main(void)
     InitQEI1();
     InitQEI2();
     
+    //initializing Kp  
+    robotState.Kp_lin = 1;
+    robotState.Ki_lin = 1;
+    robotState.kd_lin = 1;
+            
+    robotState.Kp_angl = 1;
+    robotState.Ki_angl = 1;
+    robotState.Kd_angl = 1;
+    
+    robotState.vitesseAngulaireConsigne = 0;
+    robotState.vitesseLineaireConsigne = 0;
+    
     while(1)
     {
         DecodeLoop();
+        robotState.vitesseAngulaireConsigne = 3.0;
         if(messageAvailable && !CheckSumErrorOccured)
         {
             switch(msgDecodedFunction)
@@ -155,6 +168,20 @@ int main(void)
                     else if(LED_CODE == CODE_LED_BLANCHE)
                         LED_BLANCHE = LED_STATE;
                 break;
+                
+                case CMD_ANGULAR_SPEED_CONSIGNE:
+                    robotState.vitesseAngulaireConsigne = (char)msgDecodedPayload[0];
+                    UartAckAnglSpeedConsigne();
+                break;
+                    
+                case CMD_LINEAR_SPEED_CONSIGNE:
+                    robotState.vitesseLineaireConsigne = (char)msgDecodedPayload[0];
+                    UartAckLinSpeedConsigne();
+                break;
+            }
+            if(CheckSumErrorOccured)
+            {
+                CheckSumErrorOccured = 0;
             }
             messageAvailable = 0;
         }

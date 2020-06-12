@@ -20,10 +20,11 @@ void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void)
     
     QEIUpdateData(); //update QEI data
     PWMUpdateSpeed();//update Speed
+    PWMSetSpeedConsignePolaire();
     
-    if(timestamp - timeSample >= 50)
+    if(timestamp - timeSample >= 50)//20Hz
     {
-        timeSample = timestamp;
+        timeSample = timestamp;        
         SendPositionData();
     }
     

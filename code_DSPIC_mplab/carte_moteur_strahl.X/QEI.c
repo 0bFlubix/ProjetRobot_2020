@@ -37,8 +37,8 @@ void QEIUpdateData()
     QEI2RawValue += ((long)POS2HLD << 16);
     
     //convert to mm
-    robotState.QeiDroitPosition = 0.01620*QEI1RawValue;
-    robotState.QeiGauchePosition = -0.01620*QEI2RawValue;
+    robotState.QeiDroitPosition = (0.01620*QEI1RawValue)/1000;
+    robotState.QeiGauchePosition = (-0.01620*QEI2RawValue)/1000;
     
     //computing position deltas
     double delta_d = robotState.QeiDroitPosition - QeiDroitPosition_T_1;
@@ -72,7 +72,7 @@ void QEIUpdateData()
         robotState.angleRadianFromOdometry += 2*PI;
 }
 
-void SendPositionData()
+ void SendPositionData()
 {
     unsigned char positionPayload[24];
     getBytesFromInt32(positionPayload, 0, timestamp);
@@ -83,3 +83,15 @@ void SendPositionData()
     getBytesFromFloat(positionPayload, 20, (float)robotState.vitesseAngulaireFromOdometry);
     UartEncodeAndSendMessage(CMD_POSITION_DATA, 24, positionPayload);
 }
+ 
+ void UartAckAnglSpeedConsigne()
+ {
+     unsigned char currentConsigne = (unsigned char)robotState.vitesseAngulaireConsigne;
+     UartEncodeAndSendMessage(CMD_ANGULAR_SPEED_CONSIGNE_ACK, 1, currentConsigne);
+ }
+
+  void UartAckLinSpeedConsigne()
+ {
+     unsigned char currentConsigne = (unsigned char)robotState.vitesseLineaireConsigne;
+     UartEncodeAndSendMessage(CMD_LINEAR_SPEED_CONSIGNE_ACK, 1, currentConsigne);
+ }

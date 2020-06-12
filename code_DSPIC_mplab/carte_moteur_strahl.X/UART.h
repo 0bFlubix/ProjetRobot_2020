@@ -7,6 +7,12 @@
 #define CMD_IR 0x30 //old
 #define CMD_POSITION_DATA 0x0061
 
+#define CMD_ANGULAR_SPEED_CONSIGNE 0x0088
+#define CMD_ANGULAR_SPEED_CONSIGNE_ACK 0x0078
+
+#define CMD_LINEAR_SPEED_CONSIGNE 0x00AA
+#define CMD_LINEAR_SPEED_CONSIGNE_ACK 0x009A
+
 #define Waiting 0
 #define FunctionMSB 1
 #define FunctionLSB 2

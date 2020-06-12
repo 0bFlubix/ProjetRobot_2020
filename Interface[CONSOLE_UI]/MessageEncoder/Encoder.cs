@@ -9,6 +9,27 @@ namespace MessageEncoder
 {
     public class Encoder
     {
+        /// <summary>
+        /// Sets the robot's angular speed consigne
+        /// </summary>
+        /// <param name="port">Serial port to use</param>
+        /// <param name="consigneAngularSpeed">consigne en rad/s</param>
+        public void UartSendAngularSpeedConsigne(SerialPort port, sbyte consigneAngularSpeed)
+        {
+            byte[] msgPayload = { (byte)consigneAngularSpeed };
+            UartEncodeAndSendMessage(port, 0x0088, 1, msgPayload);
+        }
+
+        /// <summary>
+        /// Sets the robot linear speed consigne
+        /// </summary>
+        /// <param name="port">Serial port to use</param>
+        /// <param name="consigneLinearSpeed">consigne en m/s</param>
+        public void UartSendLinearSpeedConsigne(SerialPort port, sbyte consigneLinearSpeed)
+        {
+            byte[] msgPayload = { (byte)consigneLinearSpeed };
+            UartEncodeAndSendMessage(port, 0x0AA, 1, msgPayload);
+        }
 
         //sends a speed command to the robot see comments for further info
         public void UartSendSpeedCommand(SerialPort port, sbyte speedGauche, sbyte speedDroit)

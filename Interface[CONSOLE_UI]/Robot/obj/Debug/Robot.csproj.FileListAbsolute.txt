@@ -15,3 +15,9 @@ C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\Robot\obj\Debug\Robot.cspro
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\Robot\obj\Debug\Robot.csproj.CoreCompileInputs.cache
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\Robot\obj\Debug\Robot.dll
 C:\Users\flore\Desktop\ProjetRobot_2020\Interface_vs\Robot\obj\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\obj\Debug\Robot.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\obj\Debug\Robot.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\obj\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot\obj\Debug\Robot.pdb

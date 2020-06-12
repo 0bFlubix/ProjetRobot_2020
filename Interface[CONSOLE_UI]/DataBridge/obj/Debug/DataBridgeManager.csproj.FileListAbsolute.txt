@@ -1,0 +1,11 @@
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\DataBridge.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\DataBridge.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\obj\Debug\DataBridgeManager.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\obj\Debug\DataBridge.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\obj\Debug\DataBridge.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\EventArgsLibrary.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\EventArgsLibrary.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\obj\Debug\DataBridgeManager.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\DataBridge\obj\Debug\DataBridgeManager.csproj.CopyComplete

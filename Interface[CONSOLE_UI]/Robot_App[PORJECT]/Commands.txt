@@ -1,0 +1,17 @@
+*************TO ROBOT*******************************************
+
+SetSpeed <SpeedGauche> <SpeedDroit>
+st -> arrêt des moteurs
+
+AnglSpeedConsigne <consigne> -> sets angular speed consigne 0x0088
+LinSpeedConsgine <Consigne> -> sets linear speed consigne   0x00AA
+
+
+*****************************************************************
+
+****************************ROBOT ACK****************************
+
+ACK from AnglSpeedConsigne -> return actual anglSpeedConsigne
+ACK from LinSpeedConsigne -> return actual LinSpeedConsigne
+
+*****************************************************************

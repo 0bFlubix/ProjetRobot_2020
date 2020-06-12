@@ -21,6 +21,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageEncoder", "..\Messag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\Utilities\Utilities.csproj", "{8E7D0DA4-9A13-4B18-A90E-0243BBCCE40A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfOscilloscopeControl", "..\..\Interface[UI_ONLY]\WpfOscilloscope\WpfOscilloscopeControl.csproj", "{88BAA407-3FEA-4F4B-BB41-5309CE48884E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBridgeManager", "..\DataBridge\DataBridgeManager.csproj", "{8E452C74-39B6-46F3-A4A3-F9D68C60BE2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{BC389B37-5BF0-4E2F-B038-6C71D801B67B}"
+	ProjectSection(SolutionItems) = preProject
+		Commands.txt = Commands.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +72,14 @@ Global
 		{8E7D0DA4-9A13-4B18-A90E-0243BBCCE40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E7D0DA4-9A13-4B18-A90E-0243BBCCE40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E7D0DA4-9A13-4B18-A90E-0243BBCCE40A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BAA407-3FEA-4F4B-BB41-5309CE48884E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BAA407-3FEA-4F4B-BB41-5309CE48884E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BAA407-3FEA-4F4B-BB41-5309CE48884E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BAA407-3FEA-4F4B-BB41-5309CE48884E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E452C74-39B6-46F3-A4A3-F9D68C60BE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E452C74-39B6-46F3-A4A3-F9D68C60BE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E452C74-39B6-46F3-A4A3-F9D68C60BE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E452C74-39B6-46F3-A4A3-F9D68C60BE2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

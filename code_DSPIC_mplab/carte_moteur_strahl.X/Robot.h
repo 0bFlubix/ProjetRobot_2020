@@ -29,7 +29,20 @@ typedef struct robotStateBITS
             float vitesseGaucheCommandeCourante;
             float vitesseDroiteConsigne;
             float vitesseDroiteCommandeCourante;
+            
+            
+            double Kp_lin;
+            double Ki_lin;
+            double kd_lin;
+            
+            double Kp_angl;
+            double Ki_angl;
+            double Kd_angl;
+            
+            double vitesseLineaireConsigne;
+            double vitesseAngulaireConsigne;
 
+            
             float QeiDroitPosition;
             float QeiGauchePosition;
             

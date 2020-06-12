@@ -32,7 +32,7 @@ namespace ExtendedSerialPort
             kickoffRead = (Action)(() => BaseStream.BeginRead(buffer, 0, buffer.Length, delegate (IAsyncResult ar)
             {
                 if (!base.IsOpen) return; //if base is closed exit func, avoid port closed error
-                int count = BaseStream.EndRead(ar);
+                 int count = BaseStream.EndRead(ar);
                 byte[] dst = new byte[count];
                 Buffer.BlockCopy(buffer, 0, dst, 0, count);
                 OnDataReceived(dst);

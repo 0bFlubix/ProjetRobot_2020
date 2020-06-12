@@ -1,0 +1,68 @@
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.pdb
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Charting.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Core.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Data.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Drawing.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Charting.xml
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Core.xml
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Data.xml
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\bin\Debug\SciChart.Drawing.xml
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csprojAssemblyReference.cache
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscope.g.cs
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.cache
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.lref
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscope.baml
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.g.resources
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.Properties.Resources.resources
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.GenerateResource.cache
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CoreCompileInputs.cache
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CopyComplete
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.dll
+C:\Users\table1\Desktop\RoboCup2020-master\C#\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Charting.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Core.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Data.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Drawing.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Charting.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Core.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Data.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Drawing.xml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csprojAssemblyReference.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscope.g.cs
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.lref
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscope.baml
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.g.resources
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.Properties.Resources.resources
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.GenerateResource.cache
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CopyComplete
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.pdb
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\Utilities.dll
+C:\Users\LattePanda\Documents\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\Utilities.pdb
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.pdb
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\WpfOscilloscopeControl.pdb
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Charting.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Core.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Data.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Drawing.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\Utilities.dll
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\Utilities.pdb
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Charting.xml
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Core.xml
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Data.xml
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\bin\Debug\SciChart.Drawing.xml
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscope.g.cs
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.cache
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl_MarkupCompile.lref
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscope.baml
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.g.resources
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.Properties.Resources.resources
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.GenerateResource.cache
+C:\Users\Valentin\Desktop\Embarqué plus C#\E&R_AxelAdrien_300120\WpfOscilloscope\obj\Debug\WpfOscilloscopeControl.csproj.CopyComplete

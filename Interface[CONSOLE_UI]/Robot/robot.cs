@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Robot
 {
     //robt state enums
-    public class robot
+    public static class robot
     {
         public enum Motors
         {
@@ -31,11 +31,16 @@ namespace Robot
             Avance, Recule
         }
 
-        public ushort[] distanceTelem = new ushort[5];
-        public sbyte actualSpeedRoueGauche; //signed
-        public sbyte actualSpeedRoueDroite; //signed
-        public robot.MotorWays actualWayRoueGauche;
-        public robot.MotorWays actualWayRoueDroite;
+        public static float vitesseLineaireFromOdometry;
+        public static float vitesseAngulaireFromOdometry;
+        public static float xPositionFromOdometry;
+        public static float yPositionFromOdometry;
+
+        public static ushort[] distanceTelem = new ushort[5];
+        public static sbyte actualSpeedRoueGauche; //signed
+        public static sbyte actualSpeedRoueDroite; //signed
+        public static robot.MotorWays actualWayRoueGauche;
+        public static robot.MotorWays actualWayRoueDroite;
     }
 
 }

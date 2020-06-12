@@ -131,14 +131,16 @@ namespace Utilities
                 d.Add(key, value);
         }
 
-        
+        /// <summary>
+        /// returns an unsigned long from a byte array
+        /// </summary>
+        /// <param name="bArray">Byte array bArray[0] is MSB</param>
+        /// <returns></returns>
         public static ulong GetUlong(byte[] bArray)
         {
             ulong variable = new ulong();
-            for(int i = 0; i < bArray.Length; i++)
-            {
-                variable += (ulong)(bArray[i] << 8 * (4 - i));
-            }
+            for(int i = 0; i < 4; i++)
+               variable += (ulong)(bArray[i] << (8 * (3 - i)));
             
             return variable;
         }

@@ -6,6 +6,9 @@
 #include "ToolBox.h"
 
 #define PWMPER 40.0
+#define COEFF_VITESSE_ANGULAIRE_PERCENT 1/25
+#define COEFF_VITESSE_LINEAIRE_PERCENT 1/50
+
 unsigned char acceleration = 20;
 
 void InitPWM(void)
@@ -131,4 +134,27 @@ void PWMSetSpeedConsigne(float vitesseEnPourcents, unsigned char moteur)
         robotState.vitesseGaucheConsigne = vitesseEnPourcents;
     else
         robotState.vitesseDroiteConsigne = vitesseEnPourcents;
+}
+
+void PWMSetSpeedConsignePolaire()
+{
+    //correction angulaire
+    //double erreurVitesseAngulaire = robotState.vitesseAngulaireConsigne - robotState.vitesseAngulaireFromOdometry; //mod
+    
+    double correction_P_angulaire = 
+    
+    //double sortieCorrecteurAngulaire = Kpa * erreurVitesseAngulaire;//mod
+    double correctionVitesseAngulairePourcent = robotState.vitesseAngulaireConsigne;// * COEFF_VITESSE_ANGULAIRE_PERCENT ;
+    
+    //correction Lineaire
+    //double erreurVitesseLineaire = robotState.vitesseLineaireConsigne - robotState.vitesseLineaireFromOdometry;
+    //double sortieCorrecteurLineaire = Kpl * erreurVitesseLineaire; //mod
+    double correctionVitesseLineairePourcent = robotState.vitesseLineaireConsigne;// * COEFF_VITESSE_LINEAIRE_PERCENT;
+    
+    //generation des consignes droite et gauche
+    robotState.vitesseDroiteConsigne = correctionVitesseLineairePourcent + correctionVitesseAngulairePourcent;
+    robotState.vitesseDroiteConsigne = LimitToInterval(robotState.vitesseDroiteConsigne, -100, 100);
+    
+    robotState.vitesseGaucheConsigne = correctionVitesseLineairePourcent - correctionVitesseAngulairePourcent;
+    robotState.vitesseGaucheConsigne = LimitToInterval(robotState.vitesseGaucheConsigne, -100, 100);
 }

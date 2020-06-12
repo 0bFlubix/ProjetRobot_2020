@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Robot;
 
 /// <summary>
@@ -91,5 +92,15 @@ namespace EventArgsLibrary
         public float VitesseLineaireFromOdometry { get; set; }
         public float VitesseAngulaireFromOdometry { get; set; }
     }
-
+    
+    //DataBridge: DataBridgeOutEvent
+    public class DataBridgeOutArgs : EventArgs
+    {
+        public ulong Timestamp { get; set; }
+        public float XPositionFromOdometry { get; set; }
+        public float YPositionFromOdometry { get; set; }
+        public float AngleRadianFromOdometry { get; set; }
+        public float VitesseLineaireFromOdometry { get; set; }
+        public float VitesseAngulaireFromOdometry { get; set; }
+    }
 }

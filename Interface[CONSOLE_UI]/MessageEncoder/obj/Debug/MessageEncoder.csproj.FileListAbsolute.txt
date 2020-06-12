@@ -22,3 +22,12 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageEncoder\obj\Debug\Mess
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageEncoder\obj\Debug\MessageEncoder.csproj.CopyComplete
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageEncoder\obj\Debug\MessageEncoder.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[UI_ONLY]\MessageEncoder\obj\Debug\MessageEncoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\bin\Debug\MessageEncoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\bin\Debug\MessageEncoder.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\bin\Debug\Robot.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\bin\Debug\Robot.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\obj\Debug\MessageEncoder.csprojAssemblyReference.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\obj\Debug\MessageEncoder.csproj.CoreCompileInputs.cache
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\obj\Debug\MessageEncoder.csproj.CopyComplete
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\obj\Debug\MessageEncoder.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageEncoder\obj\Debug\MessageEncoder.pdb

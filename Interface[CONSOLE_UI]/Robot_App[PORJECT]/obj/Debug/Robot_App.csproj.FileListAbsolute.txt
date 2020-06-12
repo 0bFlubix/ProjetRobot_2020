@@ -45,3 +45,15 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Deb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Utilities.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Utilities.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfOscilloscopeControl.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Charting.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Drawing.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Core.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\WpfOscilloscopeControl.pdb
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Charting.xml
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Drawing.xml
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Core.xml
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.xml
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.dll
+D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.pdb
