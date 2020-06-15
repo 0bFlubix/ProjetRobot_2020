@@ -55,8 +55,6 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Deb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Drawing.xml
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Core.xml
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\SciChart.Data.xml
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.dll
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\DataBridge.pdb
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.exe.config
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.exe
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\Robot_App[PORJECT]\bin\Debug\Robot_App.pdb

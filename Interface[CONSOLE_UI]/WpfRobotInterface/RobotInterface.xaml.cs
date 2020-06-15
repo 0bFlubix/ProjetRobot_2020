@@ -15,21 +15,23 @@ namespace WpfRobotInterface
     public partial class RobotInterface : Window
     {
 
-        DispatcherTimer GraphUpdater = new DispatcherTimer();
-        double angularSpeedConsigne = 2;
-        double linearSpeedConsigne = 1;
+        DispatcherTimer Updater = new DispatcherTimer();
+
         private readonly int maxPointsOnGraph = 300;
         private ulong UpdaterTimestamp = 0;
 
+        double angularSpeedError = 0;
+        double linearSpeedError = 0;
+
         public RobotInterface()
         {
+
             InitializeComponent();
 
-            GraphUpdater.Interval = new TimeSpan(0, 0, 0, 0, 10);
-            GraphUpdater.Tick += GraphUpdater_Tick; //subscribe to the tick event
-            GraphUpdater.Start();
+            Updater.Interval = new TimeSpan(0, 0, 0, 0, 10);
 
             //setting graph titles
+            Updater.Tick += Updater_Tick;
             Osc_LinearSpeedOdometry.SetTitle("Linear speed from odometry");
             Osc_AngularSpeedOdometry.SetTitle("Angular speed from odometry");
             Osc_ErrorLinearAngularSpeed.SetTitle("Error Linear/angular speed");
@@ -46,15 +48,14 @@ namespace WpfRobotInterface
 
             Osc_AngularSpeedOdometry.ChangeLineColor((int)GraphLineID.ErrorAngularSpeed, System.Drawing.Color.DarkViolet);
             Osc_LinearSpeedOdometry.ChangeLineColor((int)GraphLineID.ErrorLinearSpeed, System.Drawing.Color.LightGreen);
+
+            
+            Updater.Start();
         }
 
-        private void GraphUpdater_Tick(object sender, EventArgs e)
+        private void Updater_Tick(object sender, EventArgs e)
         {
-            if(toggleFreeze == 0)
-            {
-
-                UpdaterTimestamp++;
-            }
+            textBlock_LinSpeedError.Text = angularSpeedError.ToString();
         }
 
         private enum GraphLineID
@@ -75,13 +76,16 @@ namespace WpfRobotInterface
         //Incoming Events
         public void OnPositionDataProcessedEvent(object sender, PositionDataProcessedArgs e)
         {
-            double angularSpeedError = angularSpeedConsigne - e.VitesseAngulaireFromOdometry;
-            double linearSpeedError = linearSpeedConsigne - e.VitesseLineaireFromOdometry;
-            Osc_LinearSpeedOdometry.AddPointToLine((int)GraphLineID.LinearSpeed, e.Timestamp, e.VitesseLineaireFromOdometry);
-            Osc_AngularSpeedOdometry.AddPointToLine((int)GraphLineID.AngularSpeed, e.Timestamp, e.VitesseLineaireFromOdometry);
-            Osc_AngularSpeedOdometry.AddPointToLine((int)GraphLineID.ErrorAngularSpeed, e.Timestamp, angularSpeedError);
-            Osc_LinearSpeedOdometry.AddPointToLine((int)GraphLineID.ErrorLinearSpeed, e.Timestamp, linearSpeedError);
-            textBlock_LinSpeedError.Text = linearSpeedError.ToString();
+            if (toggleFreeze == 0)
+            {
+                angularSpeedError = robot.vitesseAngulaireConsigne - e.VitesseAngulaireFromOdometry;
+                linearSpeedError = robot.vitesseLineaireConsigne - e.VitesseLineaireFromOdometry;
+                Osc_LinearSpeedOdometry.AddPointToLine((int)GraphLineID.LinearSpeed, e.Timestamp, e.VitesseLineaireFromOdometry);
+                Osc_AngularSpeedOdometry.AddPointToLine((int)GraphLineID.AngularSpeed, e.Timestamp, e.VitesseAngulaireFromOdometry);
+                Osc_AngularSpeedOdometry.AddPointToLine((int)GraphLineID.ErrorAngularSpeed, e.Timestamp, angularSpeedError);
+                Osc_LinearSpeedOdometry.AddPointToLine((int)GraphLineID.ErrorLinearSpeed, e.Timestamp, linearSpeedError);
+            }
+
         }
     }
 }

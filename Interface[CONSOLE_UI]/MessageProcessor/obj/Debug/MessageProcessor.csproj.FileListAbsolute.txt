@@ -57,8 +57,6 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\obj\Debug\MessageProcessor.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Utilities.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\Utilities.pdb
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.dll
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.pdb
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageProcessor.dll
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\MessageProcessor.pdb
 C:\Github\Etudiants GEII\Robot_Florent_Barthelemy\Interface[CONSOLE_UI]\MessageProcessor\bin\Debug\DataBridge.dll

@@ -6,7 +6,7 @@
 #include "ToolBox.h"
 
 #define PWMPER 40.0
-#define COEFF_VITESSE_ANGULAIRE_PERCENT 1/25
+#define COEFF_VITESSE_ANGULAIRE_PERCENT 10
 #define COEFF_VITESSE_LINEAIRE_PERCENT 1/50
 
 unsigned char acceleration = 20;
@@ -141,11 +141,10 @@ void PWMSetSpeedConsignePolaire()
     //correction angulaire
     //double erreurVitesseAngulaire = robotState.vitesseAngulaireConsigne - robotState.vitesseAngulaireFromOdometry; //mod
     
-    double correction_P_angulaire = Kp
+   // double correction_P_angulaire = Kp
     
     //double sortieCorrecteurAngulaire = Kpa * erreurVitesseAngulaire;//mod
-    double correctionVitesseAngulairePourcent = robotState.vitesseAngulaireConsigne;// * COEFF_VITESSE_ANGULAIRE_PERCENT ;
-    
+    double correctionVitesseAngulairePourcent = robotState.vitesseAngulaireConsigne * COEFF_VITESSE_ANGULAIRE_PERCENT;
     //correction Lineaire
     //double erreurVitesseLineaire = robotState.vitesseLineaireConsigne - robotState.vitesseLineaireFromOdometry;
     //double sortieCorrecteurLineaire = Kpl * erreurVitesseLineaire; //mod

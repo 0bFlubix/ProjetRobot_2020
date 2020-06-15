@@ -65,10 +65,6 @@ namespace EventArgsLibrary
         public byte[] PacketData { get; set; }
     }
 
-    /*
-     * Data redirection, virtual loopback
-     */
-
     //DataRedirector: data redirection bridge (to any)
     public class RedirectedDataArgs : EventArgs
     {
@@ -81,7 +77,6 @@ namespace EventArgsLibrary
         public byte[] Data { get; set; }
     }
 
-
     //MessageProcessor: positionDataProcessedEvent
     public class PositionDataProcessedArgs : EventArgs
     {
@@ -92,15 +87,17 @@ namespace EventArgsLibrary
         public float VitesseLineaireFromOdometry { get; set; }
         public float VitesseAngulaireFromOdometry { get; set; }
     }
-    
-    //DataBridge: DataBridgeOutEvent
-    public class DataBridgeOutArgs : EventArgs
+
+    //MessageProcessor: VitesseLineaireConsigneACKEvent
+    public class AngularSpeedConsigneAckFromRobotArgs : EventArgs
     {
-        public ulong Timestamp { get; set; }
-        public float XPositionFromOdometry { get; set; }
-        public float YPositionFromOdometry { get; set; }
-        public float AngleRadianFromOdometry { get; set; }
-        public float VitesseLineaireFromOdometry { get; set; }
-        public float VitesseAngulaireFromOdometry { get; set; }
+        public float Consigne { get; set; }
     }
+
+    //MessageProcessor: LinearSpeedConsigneAckEvent
+    public class LinearSpeedConsigneAckFromRobotArgs : EventArgs
+    {
+        public float Consigne { get; set; }
+    }
+
 }

@@ -95,23 +95,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Interface_vs\EventArgsLibrary\EventArgsLibrary.csproj">
-      <Project>{50d84d2f-4461-4bb3-b302-aa430cf75c5d}</Project>
-      <Name>EventArgsLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Interface_vs\ExtendedSerialPort\ExtendedSerialPort.csproj">
-      <Project>{21ac599e-e3d5-4181-aa0f-7c2e00cca016}</Project>
-      <Name>ExtendedSerialPort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataRedirector\DataRedirector.csproj">
+    <ProjectReference Include="..\..\Blocks\DataRedirector\DataRedirector.csproj">
       <Project>{6218bfd0-2332-45dd-ab0a-d1e9f0b90073}</Project>
       <Name>DataRedirector</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HerkulexCom\HerkulexController.csproj">
+    <ProjectReference Include="..\..\Blocks\EventArgsLibrary\EventArgsLibrary.csproj">
+      <Project>{19402145-6e88-4322-b0d6-84e1bd509b20}</Project>
+      <Name>EventArgsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Blocks\ExtendedSerialPort\ExtendedSerialPort.csproj">
+      <Project>{21ac599e-e3d5-4181-aa0f-7c2e00cca016}</Project>
+      <Name>ExtendedSerialPort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Blocks\HerkulexCom\HerkulexController.csproj">
       <Project>{ada2c3ab-18d0-4391-8066-272ab39102aa}</Project>
       <Name>HerkulexController</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HerkulexReceptManager\HerkulexReceptManager.csproj">
+    <ProjectReference Include="..\..\Blocks\HerkulexReceptManager\HerkulexReceptManager.csproj">
       <Project>{bf6c02fd-e547-4be0-94b5-8f43cd4244b0}</Project>
       <Name>HerkulexReceptManager</Name>
     </ProjectReference>

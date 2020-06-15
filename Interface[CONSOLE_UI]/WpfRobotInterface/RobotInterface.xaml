@@ -23,7 +23,7 @@
         <WpfOscilloscopeControl:WpfOscilloscope x:Name="Osc_AngularSpeedOdometry" Margin="13,5,0,5" Grid.Column="1" Grid.Row="1"/>
         <WpfOscilloscopeControl:WpfOscilloscope x:Name="Osc_ErrorLinearAngularSpeed" Margin="13,0,0,0" Grid.Column="1" Grid.Row="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="154" FontSize="14"><Run Text="Linear speed error"/><Run Text=" :"/></TextBlock>
-        <TextBlock x:Name="textBlock_LinSpeedError" HorizontalAlignment="Left" Margin="161,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="35" Text="---" FontSize="14"/>
+        <TextBlock x:Name="textBlock_LinSpeedError" HorizontalAlignment="Left" Margin="161,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="160" Text="---" FontSize="14"/>
         <TextBlock x:Name="textBlock_LinSpeedError_Copy" HorizontalAlignment="Left" Margin="10,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="141" FontSize="14"><Run Text="Max error amplitude"/><Run Text=" :"/></TextBlock>
         <TextBlock x:Name="textBlock_LinSpeedErrorMaxAmplitude" HorizontalAlignment="Left" Margin="161,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="35" Text="---" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="201,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="18" Width="35" FontSize="14"><Run Text="m/s"/><LineBreak/><Run/></TextBlock>

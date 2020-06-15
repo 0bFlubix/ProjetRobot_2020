@@ -44,21 +44,18 @@ namespace Robot_App
 
         [STAThread]
         static void Main(string[] args)
-        {
-
-            SerialStream.Open();
-
+        { 
             ////block logic
             SerialStream.DataReceived += MsgDecoder.DecodeMessage;
             MsgDecoder.OnDataDecodedEvent += MsgProcessor.ProcessMessage;
-            //MsgProcessor.OnPositionDataProcessedEvent += MsgProcessor_OnPositionDataProcessedEvent;
-            MsgProcessor.OnAngularSpeedConsigneAckFromRobotEvent += MsgProcessor_OnAngularSpeedConsigneAckFromRobotEvent;
-            MsgProcessor.OnLinearSpeedConsigneAckFromRobotEvent += MsgProcessor_OnLinearSpeedConsigneAckFromRobotEvent;
+
 
             //MsgEncoder.UartSendSpeedCommand(SerialStream, 0, 0);
 
             if (usingRobotInterface)
                 StartRobotInterface();
+
+            SerialStream.Open();
 
             ConsoleWriteColoredText("Initialized", ConsoleColor.Yellow);
             while(appLocked)
@@ -69,10 +66,12 @@ namespace Robot_App
                 switch (splittedCommand[0])
                 {
                     case "SetSpeed":
+                        robot.vitesseAngulaireConsigne = Convert.ToSByte(splittedCommand[1]);
                         MsgEncoder.UartSendSpeedCommand(SerialStream, Convert.ToSByte(splittedCommand[1]), Convert.ToSByte(splittedCommand[2]));
                         break;
 
                     case "anglSpeed":
+                        robot.vitesseLineaireConsigne = Convert.ToSByte(splittedCommand[1]);
                         MsgEncoder.UartSendAngularSpeedConsigne(SerialStream, Convert.ToSByte(splittedCommand[1]));
                         break;
 
@@ -93,17 +92,6 @@ namespace Robot_App
             //Thread.CurrentThread.Join();
         }
 
-        //on linearSpeedConsigne ACK
-        private static void MsgProcessor_OnLinearSpeedConsigneAckFromRobotEvent(object sender, EventArgs e)
-        {
-            ConsoleWriteColoredText("ACK OK > LinearSpeedConsigne", ConsoleColor.Cyan);
-        }
-
-        //on angularSpeedConsigne ACK
-        private static void MsgProcessor_OnAngularSpeedConsigneAckFromRobotEvent(object sender, EventArgs e)
-        {
-            ConsoleWriteColoredText("ACK OK > AngularSpeedConsigne", ConsoleColor.Cyan);
-        }
 
         private static string[] ProcessUserCommand(string input)
         {

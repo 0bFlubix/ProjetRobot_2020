@@ -100,10 +100,6 @@
       <Project>{88baa407-3fea-4f4b-bb41-5309ce48884e}</Project>
       <Name>WpfOscilloscopeControl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataBridge\DataBridgeManager.csproj">
-      <Project>{8e452c74-39b6-46f3-a4a3-f9d68c60be2c}</Project>
-      <Name>DataBridgeManager</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EventArgsLibrary\EventArgsLibrary.csproj">
       <Project>{11625ecf-0749-446a-ba28-4698b1be54f5}</Project>
       <Name>EventArgsLibrary</Name>

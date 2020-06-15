@@ -62,8 +62,6 @@ D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debu
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\EventArgsLibrary.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\MessageProcessor.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\Robot.pdb
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\DataBridge.dll
-D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\DataBridge.pdb
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\ExtendedSerialPort.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\MessageDecoder.dll
 D:\code\IUT\S2\ProjetRobot_2020\Interface[CONSOLE_UI]\WpfRobotInterface\bin\Debug\MessageEncoder.dll

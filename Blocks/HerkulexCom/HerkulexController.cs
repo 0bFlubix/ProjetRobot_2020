@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Net.Sockets;
 using System.Net.Http;
+using System.Security.Permissions;
+using System.Diagnostics.Tracing;
+using System.Collections;
+using System.Runtime.CompilerServices;
 
 /* Herkulex UART params:
 Stop Bit : 1
@@ -15,19 +19,26 @@ Baud Rate : 57,600 / 115,200 / 0.2M / 0.25M / 0.4M / 0.5M / 0.667M
 
 Maximum memory length for any adress in the servo memory is 2 bytes
 Minimum packet lengh is 7 bytes
+
+For 2 byte variables, using little-endian storage (LSB first)
 */
 
 
 namespace HerkulexController
 {
-    public class HerkulexController
+    public class ServoController
     {
 
-        //Request a value From memory
+        /// <summary>
+        /// Request a value From memory
+        /// </summary>
+        /// <param name="port">Serial Port to use</param>
+        /// <param name="pID">Servo ID</param>
+        /// <param name="memoryAddress">Servo ROM address</param>
         public void EEP_ReadParam(SerialPort port, byte pID, byte memoryAddress)
         {
 
-            byte packetSize = (byte)(9); //reading only one value so fixed length of 9 bytes in the packet (data[0] = addr data[1] = len@addr)
+            byte packetSize = (byte)(9); //reading only one value so fixed length of 9 bytes in the packet (data[0] = addr, data[1] = len@addr)
             byte[] data = { memoryAddress, GetMemoryAddrLength(memoryAddress) };
 
             byte[] packet = new byte[packetSize]; //initializing packet to the right length
@@ -45,7 +56,13 @@ namespace HerkulexController
             port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
         }
 
-        //writes a value to the specified memory address
+        /// <summary>
+        /// writes a value at the specified memory address
+        /// </summary>
+        /// <param name="port">Serial port to use</param>
+        /// <param name="pID">Servo ID</param>
+        /// <param name="memoryAddress">Servo ROM address</param>
+        /// <param name="dataToWrite">data to write</param>
         public void EEP_WriteParam(SerialPort port, byte pID, byte memoryAddress, byte[] dataToWrite)
         {
             byte packetSize = (byte)(7 + dataToWrite.Length);
@@ -58,17 +75,121 @@ namespace HerkulexController
             packet[3] = pID;
             packet[4] = (byte)ToServoCommandSet.EEP_WRITE; //CMD is EEP_WRITE
             packet[5] = (byte)GetChecksum(packetSize, pID, (byte)ToServoCommandSet.EEP_WRITE, dataToWrite)[0]; //calc Check Sum1
-            packet[5] = (byte)GetChecksum(packetSize, pID, (byte)ToServoCommandSet.EEP_WRITE, dataToWrite)[1]; //calc Check Sum2
-            packet[7] = dataToWrite[0];
+            packet[6] = (byte)GetChecksum(packetSize, pID, (byte)ToServoCommandSet.EEP_WRITE, dataToWrite)[1]; //calc Check Sum2
             if (packetSize == 9) //if dataToWrite is two bytes long
-                packet[8] = dataToWrite[1];
+            {
+                packet[7] = dataToWrite[1]; //LSB first, little-endian rule
+                packet[8] = dataToWrite[0]; //MSB least
+            }
+            else
+                packet[7] = dataToWrite[0];
 
             port.Write(packet, 0, packet.Length); //sending packet with 0 bytes offset
         }
 
+        /// <summary>
+        /// Sends I_JOG command
+        /// </summary>
+        /// <param name="port">Serial port to use</param>
+        /// <param name="TAGS">list of tags to control each servo</param>
+        public void I_JOG(SerialPort port, List<IJOG_TAG> TAGS)
+        {
+            byte[] dataToSend = new byte[5 * TAGS.Count];
 
+            //TAG to sendable data construction
+            byte constructionInex = 0;
+            foreach (IJOG_TAG tag in TAGS)
+            {
+                byte JOG_LSB = (byte)(tag.PositionGoal >> 8);
+                byte JOG_MSB = (byte)(tag.PositionGoal >> 0);
 
-        //all controller commands set
+                byte SET = 0x00;
+
+                SET |= (byte)(tag.mode == JOG_MODE.positionControlJOG ? (0 << 1) : (1 << 1));
+                SET |= (byte)(tag.LED_GREEN_ON ? (1 << 2) : (0 << 2));
+                SET |= (byte)(tag.LED_BLUE_ON ? (1 << 3) : (0 << 3));
+                SET |= (byte)(tag.LED_RED_ON ? (1 << 4) : (0 << 4));
+
+                byte ID = tag.ID;
+                byte playTime = tag.playTime;
+
+                dataToSend[constructionInex + 0] = JOG_LSB;
+                dataToSend[constructionInex + 1] = JOG_MSB;
+                dataToSend[constructionInex + 2] = SET;
+                dataToSend[constructionInex + 3] = ID;
+                dataToSend[constructionInex + 4] = playTime;
+
+                constructionInex += 5; //offset by 5 bytes
+            }
+
+            byte packetSize = (byte)(7 + dataToSend.Length); //7 fixed legth + n jog tags (each tag takes 5 bytes)
+
+            byte[] packet = new byte[packetSize];
+
+            packet[0] = 0xFF;
+            packet[1] = 0xFF;
+            packet[2] = packetSize;
+            packet[3] = 0xFD;
+            packet[4] = (byte)ToServoCommandSet.I_JOG;
+            packet[5] = GetChecksum(packetSize, 0xFD, packet[4], dataToSend)[0];
+            packet[6] = GetChecksum(packetSize, 0xFD, packet[4], dataToSend)[1];
+
+            //append dataToSend to packet
+            for (int i = 0; i < dataToSend.Length; i++)
+                packet[7 + i] = dataToSend[i];
+
+            //breakpoint here
+            port.Write(packet, 0, packet.Length);
+        }
+
+        /// <summary>
+        /// Holds the Servo configuration for S_JOG / I_JOG
+        /// </summary>
+        public struct IJOG_TAG
+        {
+            public byte ID;
+            public byte playTime;
+
+            public JOG_MODE mode;
+            public bool infiniteTurnIsNegative;
+
+            public bool LED_GREEN_ON;
+            public bool LED_BLUE_ON;
+            public bool LED_RED_ON;
+
+            private ushort _positionGoal;
+            public ushort PositionGoal
+            {
+                get => _positionGoal;
+                set { _positionGoal = (ushort)(value & 0x7FFF); } //set bit 14 and 15 to 0
+            }
+
+            private ushort _infiniteTurnDesiredPWM;
+            public ushort InfiniteTurnDesiredPWM
+            {
+                get => _infiniteTurnDesiredPWM;
+                set
+                {
+                    if (infiniteTurnIsNegative)
+                        _infiniteTurnDesiredPWM = (ushort)((value & 0x7FFF) + 0x0400); //add 0x0400 to indicate a negative number to the servo
+                    else
+                        _infiniteTurnDesiredPWM = (ushort)(value & 0x7FFF); //avoiding accidental negative value
+                }
+            }
+        }
+
+        /// <summary>
+        /// Jog mode
+        /// </summary>
+        public enum JOG_MODE
+        {
+            positionControlJOG = 1,
+            infiniteTurn = 0
+        }
+
+        /// <summary>
+        ///all controller commands set
+        /// </summary>
         public enum ToServoCommandSet
         {
             EEP_WRITE = 0x01,
@@ -82,7 +203,9 @@ namespace HerkulexController
             REBOOT = 0x09
         }
 
-        //all commands ACK set
+        /// <summary>
+        /// all commands ACK set
+        /// </summary>
         public enum ToControllerAckSet
         {
             ack_EEP_WRITE = 0x41,
@@ -96,7 +219,9 @@ namespace HerkulexController
             ack_REBOOT = 0x49
         }
 
-        //all of the register addrs
+        /// <summary>
+        /// all of the register addrs
+        /// </summary>
         public enum SrvRegAddr
         {
             ID = (byte)(0),                                 //Byte length: 1
@@ -148,7 +273,9 @@ namespace HerkulexController
         }
 
 
-        //all of the two bytes length only addresses (use in GetMemoryAddrLength)
+        /// <summary>
+        /// all of the two bytes length only addresses (use in GetMemoryAddrLength)
+        /// </summary>
         private enum TwoBytesCMD
         {
             Saturator_Slope = (byte)(12),                   //Byte length: 2
@@ -173,11 +300,16 @@ namespace HerkulexController
             Absolute_Desired_Traject_Pos = (byte)(70),      //Byte length: 2
         }
 
-        //checksums calculation
+        /// <summary>
+        /// Calculates the frame checksum for herkulex servos
+        /// </summary>
+        /// <param name="packetSize">size of the packet</param>
+        /// <param name="pID">Servo ID</param>
+        /// <param name="CMD">command</param>
+        /// <param name="data">data to send</param>
+        /// <returns>GetCheckSum()[0] returns chckSum1, GetCheckSum()[1] returns chckSum2</returns>
         byte[] GetChecksum(byte packetSize, byte pID, byte CMD, byte[] data)
         {
-            //GetCheckSum()[0] returns chckSum1
-            //GetCheckSum()[1] returns chckSum2
             byte[] checkSum = new byte[2];
             checkSum[0] = (byte)(packetSize ^ pID ^ CMD);
 
@@ -185,12 +317,16 @@ namespace HerkulexController
                 checkSum[0] ^= data[i];
 
             checkSum[0] &= 0xFE;
-            checkSum[1] = (byte)(~checkSum[0]);
+            checkSum[1] = (byte)(~checkSum[0] & 0xFE);
 
             return checkSum;
         }
 
-        //returns the memory length at the corresponing address
+        /// <summary>
+        /// returns the memory length at the corresponing address
+        /// </summary>
+        /// <param name="ADDR">address</param>
+        /// <returns></returns>
         public byte GetMemoryAddrLength(byte ADDR)
         {
             foreach (TwoBytesCMD cmd in Enum.GetValues(typeof(TwoBytesCMD)))

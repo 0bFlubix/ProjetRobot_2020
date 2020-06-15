@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataBridge\DataBridgeManager.csproj">
-      <Project>{8e452c74-39b6-46f3-a4a3-f9d68c60be2c}</Project>
-      <Name>DataBridgeManager</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EventArgsLibrary\EventArgsLibrary.csproj">
       <Project>{fd1d02da-5546-43a8-9237-e6b7c391c628}</Project>
       <Name>EventArgsLibrary</Name>

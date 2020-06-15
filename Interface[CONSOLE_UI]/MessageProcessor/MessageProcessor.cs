@@ -4,7 +4,6 @@ using System.Text;
 using EventArgsLibrary;
 using Robot;
 using Utilities;
-using DataBridgeManager;
 using System.Collections.Generic;
 using System.Diagnostics;
 
@@ -89,14 +88,6 @@ namespace MessageProcessor
                                                     vitesseLineaireFromOdometry, vitesseAngulaireFromOdometry);
                         }
                         break;
-
-                    case 0x0078: //is AngularSpeedConsigneAck
-                        OnAngularSpeedConsigneAckFromRobot();
-                        break;
-
-                    case 0x009A: //is LinearSpeedConsigneAck
-                        OnLinearSpeeConsignedAckFromRobot();
-                        break;
                 }
             }
 
@@ -108,26 +99,6 @@ namespace MessageProcessor
         public event EventHandler<SpeedDataProcessedArgs> OnSpeedMessageProcessedEvent;
         public event EventHandler<CheckSumErrorOccuredArgs> OnCheckSumErrorOccuredEvent;
         public event EventHandler<PositionDataProcessedArgs> OnPositionDataProcessedEvent;
-        public event EventHandler<EventArgs> OnAngularSpeedConsigneAckFromRobotEvent;
-        public event EventHandler<EventArgs> OnLinearSpeedConsigneAckFromRobotEvent;
-
-        public virtual void OnAngularSpeedConsigneAckFromRobot()
-        {
-            var handler = OnAngularSpeedConsigneAckFromRobotEvent;
-            if(handler != null)
-            {
-                handler(this, new EventArgs { });
-            }
-        }
-
-        public virtual void OnLinearSpeeConsignedAckFromRobot()
-        {
-            var handler = OnLinearSpeedConsigneAckFromRobotEvent;
-            if (handler != null)
-            {
-                handler(this, new EventArgs { });
-            }
-        }
 
         public virtual void OnPositionDataProcessed(ulong timestamp, float xPositionFromOdometry, float yPositionFromOdometry, float angleRadianFromOdometry,
                                                     float vitesseLineaireFromOdometry, float vitesseAngulaireFromOdometry)

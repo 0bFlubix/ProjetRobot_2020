@@ -6,8 +6,6 @@
 
 void SendPositionData(void); //sends odometry data via uart(24bytes payload)
 void QEIUpdateData(void); //update odometry data
-void UartAckAnglSpeedConsigne(void);
-void UartAckLinSpeedConsigne(void);
 
 void InitQEI1(void); //init QEI1
 void InitQEI2(void); //init QEI2

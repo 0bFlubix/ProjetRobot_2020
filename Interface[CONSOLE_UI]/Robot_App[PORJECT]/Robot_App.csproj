@@ -53,10 +53,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataBridge\DataBridgeManager.csproj">
-      <Project>{8e452c74-39b6-46f3-a4a3-f9d68c60be2c}</Project>
-      <Name>DataBridgeManager</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EventArgsLibrary\EventArgsLibrary.csproj">
       <Project>{11625ecf-0749-446a-ba28-4698b1be54f5}</Project>
       <Name>EventArgsLibrary</Name>

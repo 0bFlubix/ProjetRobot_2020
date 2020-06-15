@@ -23,7 +23,7 @@ namespace Robot
 
         public enum Sensors
         {
-            
+
         }
 
         public enum MotorWays
@@ -44,5 +44,4 @@ namespace Robot
         public static robot.MotorWays actualWayRoueGauche;
         public static robot.MotorWays actualWayRoueDroite;
     }
-
 }

@@ -132,7 +132,7 @@ int main(void)
     InitQEI1();
     InitQEI2();
     
-    //initializing Kp  
+    //initializing PID constants 
     robotState.Kp_lin = 1;
     robotState.Ki_lin = 1;
     robotState.kd_lin = 1;
@@ -141,13 +141,13 @@ int main(void)
     robotState.Ki_angl = 1;
     robotState.Kd_angl = 1;
     
-    robotState.vitesseAngulaireConsigne = 0;
+    //PID tunning
+    robotState.vitesseAngulaireConsigne = 0.5;
     robotState.vitesseLineaireConsigne = 0;
     
     while(1)
     {
         DecodeLoop();
-        robotState.vitesseAngulaireConsigne = 3.0;
         if(messageAvailable && !CheckSumErrorOccured)
         {
             switch(msgDecodedFunction)
@@ -171,12 +171,10 @@ int main(void)
                 
                 case CMD_ANGULAR_SPEED_CONSIGNE:
                     robotState.vitesseAngulaireConsigne = (char)msgDecodedPayload[0];
-                    UartAckAnglSpeedConsigne();
                 break;
                     
                 case CMD_LINEAR_SPEED_CONSIGNE:
                     robotState.vitesseLineaireConsigne = (char)msgDecodedPayload[0];
-                    UartAckLinSpeedConsigne();
                 break;
             }
             if(CheckSumErrorOccured)
