@@ -138,7 +138,6 @@ namespace HerkulexController
             for (int i = 0; i < dataToSend.Length; i++)
                 packet[7 + i] = dataToSend[i];
 
-            //breakpoint here
             port.Write(packet, 0, packet.Length);
         }
 

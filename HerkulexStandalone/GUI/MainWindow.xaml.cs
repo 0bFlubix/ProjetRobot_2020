@@ -56,7 +56,7 @@ namespace GUI
         {
             //Config new tags
             ServoController.IJOG_TAG tagServo1 = new ServoController.IJOG_TAG();
-            tagServo1.ID = 0x00; //broadcast ID
+            tagServo1.ID = 0xFD; //broadcast ID
             tagServo1.mode = ServoController.JOG_MODE.positionControlJOG;
             tagServo1.playTime = 0x3C;
             tagServo1.PositionGoal = 0x0002;
